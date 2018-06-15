@@ -48,7 +48,8 @@ namespace BaZiCalculator.Models
         {
         }
 
-        struct ElementCycle{
+        public struct ElementCycle
+        {
             string Name;
             string Animal;
             string Percent;

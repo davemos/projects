@@ -20,13 +20,13 @@ namespace BaZiCalculator.Models
         {
         }
 
-        struct HourStem 
+        public struct HourStem 
         {
-            string Stem;
-            string Animal;
+            Stems Stem;
+            Animals Animal;
             TimeOfBirthRange TimeOfBirth;
         }
-        struct TimeOfBirthRange
+        public struct TimeOfBirthRange
         {
             long TimeStart;
             long TimeEnd;
