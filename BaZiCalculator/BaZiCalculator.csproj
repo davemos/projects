@@ -97,6 +97,8 @@
     <Compile Include="Models\YinYangMeridianChart.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\DataLoad.cs" />
+    <Compile Include="Models\struct.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

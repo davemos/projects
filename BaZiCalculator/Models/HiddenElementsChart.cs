@@ -3,12 +3,12 @@ namespace BaZiCalculator.Models
 {
     public class HiddenElementsChart
     {
-        public string Animal
+        public Animals Animal
         {
             get;
             set;
         }
-        public string MainElement
+        public Stems MainElement
         {
             get;
             set;
@@ -18,7 +18,7 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
-        public string HiddenElement
+        public Stems HiddenElement
         {
             get;
             set;
@@ -29,7 +29,17 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
+        public Stems HiddenElement2
+        {
+            get;
+            set;
+        }
 
+        public int HiddenElement2Value
+        {
+            get;
+            set;
+        }
         public HiddenElementsChart()
         {
         }

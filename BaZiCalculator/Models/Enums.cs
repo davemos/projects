@@ -3,16 +3,18 @@ namespace BaZiCalculator.Models
 {
     public enum Stems
     {
-        YangWood = 0,
-        YangMetal = 1,
-        YangFire = 2,
-        YangWater = 3,
-        YangEarth = 4,
-        YinEarth = 5,
-        YinWood = 6,
-        YinMetal = 7,
-        YinFire = 8,
-        YinWater = 9
+        Empty = 0, 
+        YangWood = 1
+        YangMetal = 2,
+        YangFire = 3,
+        YangWater = 4,
+        YangEarth = 5,
+        YinEarth = 6,
+        YinWood = 7,
+        YinMetal = 8,
+        YinFire = 9,
+        YinWater = 10
+
     }
 
     public enum Animals

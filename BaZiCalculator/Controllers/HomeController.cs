@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
+using BaZiCalculator.Models;
 
 namespace BaZiCalculator.Controllers
 {
@@ -17,6 +18,16 @@ namespace BaZiCalculator.Controllers
             ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
             ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
+            DataLoad dataLoad = new DataLoad();
+            TwelveStageGrowthCycleChart twelveStageGrowthCycleChart = dataLoad.LoadTwelveStageGrowthCycleChartData();
+            ChineseCalendarChart chineseCalendarChart = dataLoad.LoadChineseCalendarChartData();
+            DayBinomialsChart dayBinomialsChart = dataLoad.LoadDayBinomialsChartData();
+            HourStemAndBranchChart hourStemAndBranchChart = dataLoad.LoadHourStemAndBranchChartData();
+            HiddenElementsChart hiddenElementsChart = dataLoad.LoadHiddenElementsChartData();
+            LeapYearMonthBinomialChart leapYearMonthBinomialChart = dataLoad.LoadLeapYearMonthBinomialChartData();
+            MonthBinomialChart monthBinomialChart = dataLoad.LoadMonthBinomialChartData();
+            StemsAndBranchesCycleOf60 stemsAndBranchesCycleOf60 = dataLoad.LoadStemsAndBranchesCycleOf60Data();
+            YinYangMeridianChart yinYangMeridianChart = dataLoad.LoadYinYangMeridianChartData();
             return View();
         }
     }

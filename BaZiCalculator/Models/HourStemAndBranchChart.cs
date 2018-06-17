@@ -5,7 +5,7 @@ namespace BaZiCalculator.Models
 {
     public class HourStemAndBranchChart
     {
-        public string DayStem
+        public Stems DayStem
         {
             get;
             set;
@@ -20,16 +20,6 @@ namespace BaZiCalculator.Models
         {
         }
 
-        public struct HourStem 
-        {
-            Stems Stem;
-            Animals Animal;
-            TimeOfBirthRange TimeOfBirth;
-        }
-        public struct TimeOfBirthRange
-        {
-            long TimeStart;
-            long TimeEnd;
-        } 
+       
     }
 }
