@@ -30,5 +30,7 @@ namespace BaZiCalculator.Controllers
             List <YinYangMeridianChart> yinYangMeridianChart = dataLoad.LoadYinYangMeridianChartData();
             return View();
         }
+
+
     }
 }

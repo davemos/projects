@@ -99,6 +99,8 @@
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\DataLoad.cs" />
     <Compile Include="Models\struct.cs" />
+    <Compile Include="Models\BaZiCalculator.cs" />
+    <Compile Include="Models\FourPillarsTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

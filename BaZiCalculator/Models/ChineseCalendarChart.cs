@@ -40,7 +40,7 @@ namespace BaZiCalculator.Models
 
     public class MonthNumber
     {
-        public string Month
+        public DateTime Month
         {
             get;
             set;
