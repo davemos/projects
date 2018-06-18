@@ -66,9 +66,10 @@ namespace BaZiCalculator.Models
 
         }
 
-        public void Step2()
+        public void Step4(ChineseCalendarChart chart)
         {
-            int yearNum = ChineseCalendarChart
+            int monthNum = chart.MonthNumberChart.Find((obj) => obj.Month.CompareTo(BirthDate) >= 0).Number;
+
         }
     }
 }
