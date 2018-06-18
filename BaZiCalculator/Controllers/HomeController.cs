@@ -19,15 +19,15 @@ namespace BaZiCalculator.Controllers
             ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
             DataLoad dataLoad = new DataLoad();
-            TwelveStageGrowthCycleChart twelveStageGrowthCycleChart = dataLoad.LoadTwelveStageGrowthCycleChartData();
-            ChineseCalendarChart chineseCalendarChart = dataLoad.LoadChineseCalendarChartData();
-            DayBinomialsChart dayBinomialsChart = dataLoad.LoadDayBinomialsChartData();
-            HourStemAndBranchChart hourStemAndBranchChart = dataLoad.LoadHourStemAndBranchChartData();
-            HiddenElementsChart hiddenElementsChart = dataLoad.LoadHiddenElementsChartData();
-            LeapYearMonthBinomialChart leapYearMonthBinomialChart = dataLoad.LoadLeapYearMonthBinomialChartData();
-            MonthBinomialChart monthBinomialChart = dataLoad.LoadMonthBinomialChartData();
-            StemsAndBranchesCycleOf60 stemsAndBranchesCycleOf60 = dataLoad.LoadStemsAndBranchesCycleOf60Data();
-            YinYangMeridianChart yinYangMeridianChart = dataLoad.LoadYinYangMeridianChartData();
+            List <TwelveStageGrowthCycleChart> twelveStageGrowthCycleChart = dataLoad.LoadTwelveStageGrowthCycleChartData();
+            List <ChineseCalendarChart> chineseCalendarChart = dataLoad.LoadChineseCalendarChartData();
+            List <DayBinomialsChart> dayBinomialsChart = dataLoad.LoadDayBinomialsChartData();
+            List <HourStemAndBranchChart> hourStemAndBranchChart = dataLoad.LoadHourStemAndBranchChartData();
+            List <HiddenElementsChart> hiddenElementsChart = dataLoad.LoadHiddenElementsChartData();
+            List <LeapYearMonthBinomialChart> leapYearMonthBinomialChart = dataLoad.LoadLeapYearMonthBinomialChartData();
+            List <MonthBinomialChart> monthBinomialChart = dataLoad.LoadMonthBinomialChartData();
+            List <StemsAndBranchesCycleOf60> stemsAndBranchesCycleOf60 = dataLoad.LoadStemsAndBranchesCycleOf60Data();
+            List <YinYangMeridianChart> yinYangMeridianChart = dataLoad.LoadYinYangMeridianChartData();
             return View();
         }
     }

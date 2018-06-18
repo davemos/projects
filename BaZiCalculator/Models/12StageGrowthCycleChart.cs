@@ -46,13 +46,17 @@ namespace BaZiCalculator.Models
 
         public TwelveStageGrowthCycleChart()
         {
+            Wood = new ElementCycle();
+            Fire = new ElementCycle();
+            Earth = new ElementCycle();
+            Metal = new ElementCycle();
+            Water = new ElementCycle();
         }
 
-        public struct ElementCycle
+        public class ElementCycle
         {
-            string Name;
-            string Animal;
-            string Percent;
+            public Animals Animal;
+            public int Percent;
         }
     }
 }

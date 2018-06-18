@@ -5,7 +5,7 @@ namespace BaZiCalculator.Models
 {
     public class HourStemAndBranchChart
     {
-        public Stems DayStem
+        public List<Stems> DayStems
         {
             get;
             set;
@@ -18,6 +18,8 @@ namespace BaZiCalculator.Models
         }
         public HourStemAndBranchChart()
         {
+            DayStems = new List<Stems>();
+            HourStems = new List<HourStem>();
         }
 
        

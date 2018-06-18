@@ -3,13 +3,24 @@ using System.Collections.Generic;
 
 namespace BaZiCalculator.Models
 {
+
     public class ChineseCalendarChart
     {
-        List<YearNumber> YearNumberChart = new List<YearNumber>();
-        List<MonthNumber> MonthNumberChart = new List<MonthNumber>();
+        public YearNumber Year
+        {
+            get;
+            set;
+        }
+        public List<MonthNumber> MonthNumberChart
+        {
+            get;
+            set;
+        }
 
         public ChineseCalendarChart()
         {
+            Year = new YearNumber();
+            MonthNumberChart = new List<MonthNumber>();
         }
     }
 
@@ -39,7 +50,7 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
-        public DateTime Time
+        public long Time
         {
             get;
             set;

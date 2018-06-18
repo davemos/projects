@@ -4,7 +4,7 @@ namespace BaZiCalculator.Models
     public enum Stems
     {
         Empty = 0, 
-        YangWood = 1
+        YangWood = 1,
         YangMetal = 2,
         YangFire = 3,
         YangWater = 4,
