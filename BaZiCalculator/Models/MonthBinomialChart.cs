@@ -4,7 +4,7 @@ namespace BaZiCalculator.Models
     public class MonthBinomialChart
     {
 
-        public string Month
+        public int Month
         {
             get;
             set;

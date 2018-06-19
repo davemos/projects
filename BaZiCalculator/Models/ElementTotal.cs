@@ -1,57 +1,60 @@
 ﻿using System;
 namespace BaZiCalculator.Models
 {
-    public class HiddenElementsChart
+    public class ElementTotal
     {
-        public Animals Animal
+        public int WoodTotal
         {
             get;
             set;
         }
-        public Stems MainElement
+        public int FireTotal
         {
             get;
             set;
         }
-        public int MainElementValue
+        public int EarthTotal
         {
             get;
             set;
         }
-        public Stems HiddenElement
+        public int MetalTotal
         {
             get;
             set;
         }
-  
-        public int HiddenElementValue
+        public int WaterTotal
         {
             get;
             set;
         }
-        public Stems HiddenElement2
+        public int WoodPercent
+        {
+            get;
+            set;
+        }
+        public int FirePercent
+        {
+            get;
+            set;
+        }
+        public int EarthPercent
+        {
+            get;
+            set;
+        }
+        public int MetalPercent
+        {
+            get;
+            set;
+        }
+        public int WaterPercent
         {
             get;
             set;
         }
 
-        public int HiddenElement2Value
-        {
-            get;
-            set;
-        }
-        public Stems HiddenElement3
-        {
-            get;
-            set;
-        }
-
-        public int HiddenElement3Value
-        {
-            get;
-            set;
-        }
-        public HiddenElementsChart()
+        public ElementTotal()
         {
         }
     }
