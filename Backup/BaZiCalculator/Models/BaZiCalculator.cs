@@ -145,7 +145,6 @@ namespace BaZiCalculator.Models
             elementTotal.MetalPercent = elementTotal.MetalPercent / elementTotals;
             elementTotal.WaterPercent = elementTotal.WaterPercent / elementTotals;
 
-            //Step 14 
             FourPillarsResult.DayMasterLabel = Step14(FourPillarsResult.DayStem);
 
         }
