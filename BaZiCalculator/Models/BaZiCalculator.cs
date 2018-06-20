@@ -35,6 +35,26 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
+        public ElementTotal ElementTotals
+        {
+            get;
+            set;
+        }
+        public List<YinYangMeridianChart> YinYangMeridianResult
+        {
+            get;
+            set;
+        }
+        public int TotalYin
+        {
+            get;
+            set;
+        }
+        public int TotalYang
+        {
+            get;
+            set;
+        }
         public BaZiCalculator(DateTime birthDate, long birthTime)
         {
             FourPillarsResult = new FourPillarsTable();
@@ -84,36 +104,40 @@ namespace BaZiCalculator.Models
             //step 9
             HiddenElementsChart hiddenElements = new HiddenElementsChart();
             hiddenElements = hiddenElementsChart.Find((obj) => obj.Animal == FourPillarsResult.YearBranch);
-            FourPillarsResult.YearHiddenElements.HiddenElement = hiddenElements.HiddenElement;
-            FourPillarsResult.YearHiddenElements.HiddenElementValue = hiddenElements.HiddenElementValue;
-            FourPillarsResult.YearHiddenElements.HiddenElement2 = hiddenElements.HiddenElement2;
-            FourPillarsResult.YearHiddenElements.HiddenElement2Value = hiddenElements.HiddenElement2Value;
-            FourPillarsResult.YearHiddenElements.HiddenElement3 = hiddenElements.HiddenElement3;
-            FourPillarsResult.YearHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement3Value;
+            FourPillarsResult.YearHiddenElements = new HiddenElementsChart();
+            FourPillarsResult.YearHiddenElements.HiddenElement = hiddenElements.MainElement;
+            FourPillarsResult.YearHiddenElements.HiddenElementValue = hiddenElements.MainElementValue;
+            FourPillarsResult.YearHiddenElements.HiddenElement2 = hiddenElements.HiddenElement;
+            FourPillarsResult.YearHiddenElements.HiddenElement2Value = hiddenElements.HiddenElementValue;
+            FourPillarsResult.YearHiddenElements.HiddenElement3 = hiddenElements.HiddenElement2;
+            FourPillarsResult.YearHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement2Value;
 
             hiddenElements = hiddenElementsChart.Find((obj) => obj.Animal == FourPillarsResult.MonthBranch);
-            FourPillarsResult.MonthHiddenElements.HiddenElement = hiddenElements.HiddenElement;
-            FourPillarsResult.MonthHiddenElements.HiddenElementValue = hiddenElements.HiddenElementValue;
-            FourPillarsResult.MonthHiddenElements.HiddenElement2 = hiddenElements.HiddenElement2;
-            FourPillarsResult.MonthHiddenElements.HiddenElement2Value = hiddenElements.HiddenElement2Value;
-            FourPillarsResult.MonthHiddenElements.HiddenElement3 = hiddenElements.HiddenElement3;
-            FourPillarsResult.MonthHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement3Value;
+            FourPillarsResult.MonthHiddenElements = new HiddenElementsChart();
+            FourPillarsResult.MonthHiddenElements.HiddenElement = hiddenElements.MainElement;
+            FourPillarsResult.MonthHiddenElements.HiddenElementValue = hiddenElements.MainElementValue;
+            FourPillarsResult.MonthHiddenElements.HiddenElement2 = hiddenElements.HiddenElement;
+            FourPillarsResult.MonthHiddenElements.HiddenElement2Value = hiddenElements.HiddenElementValue;
+            FourPillarsResult.MonthHiddenElements.HiddenElement3 = hiddenElements.HiddenElement2;
+            FourPillarsResult.MonthHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement2Value;
 
             hiddenElements = hiddenElementsChart.Find((obj) => obj.Animal == FourPillarsResult.DayBranch);
-            FourPillarsResult.DayHiddenElements.HiddenElement = hiddenElements.HiddenElement;
-            FourPillarsResult.DayHiddenElements.HiddenElementValue = hiddenElements.HiddenElementValue;
-            FourPillarsResult.DayHiddenElements.HiddenElement2 = hiddenElements.HiddenElement2;
-            FourPillarsResult.DayHiddenElements.HiddenElement2Value = hiddenElements.HiddenElement2Value;
-            FourPillarsResult.DayHiddenElements.HiddenElement3 = hiddenElements.HiddenElement3;
-            FourPillarsResult.DayHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement3Value;
+            FourPillarsResult.DayHiddenElements = new HiddenElementsChart();
+            FourPillarsResult.DayHiddenElements.HiddenElement = hiddenElements.MainElement;
+            FourPillarsResult.DayHiddenElements.HiddenElementValue = hiddenElements.MainElementValue;
+            FourPillarsResult.DayHiddenElements.HiddenElement2 = hiddenElements.HiddenElement;
+            FourPillarsResult.DayHiddenElements.HiddenElement2Value = hiddenElements.HiddenElementValue;
+            FourPillarsResult.DayHiddenElements.HiddenElement3 = hiddenElements.HiddenElement2;
+            FourPillarsResult.DayHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement2Value;
 
             hiddenElements = hiddenElementsChart.Find((obj) => obj.Animal == FourPillarsResult.HourBranch);
-            FourPillarsResult.HourHiddenElements.HiddenElement = hiddenElements.HiddenElement;
-            FourPillarsResult.HourHiddenElements.HiddenElementValue = hiddenElements.HiddenElementValue;
-            FourPillarsResult.HourHiddenElements.HiddenElement2 = hiddenElements.HiddenElement2;
-            FourPillarsResult.HourHiddenElements.HiddenElement2Value = hiddenElements.HiddenElement2Value;
-            FourPillarsResult.HourHiddenElements.HiddenElement3 = hiddenElements.HiddenElement3;
-            FourPillarsResult.HourHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement3Value;
+            FourPillarsResult.HourHiddenElements = new HiddenElementsChart();
+            FourPillarsResult.HourHiddenElements.HiddenElement = hiddenElements.MainElement;
+            FourPillarsResult.HourHiddenElements.HiddenElementValue = hiddenElements.MainElementValue;
+            FourPillarsResult.HourHiddenElements.HiddenElement2 = hiddenElements.HiddenElement;
+            FourPillarsResult.HourHiddenElements.HiddenElement2Value = hiddenElements.HiddenElementValue;
+            FourPillarsResult.HourHiddenElements.HiddenElement3 = hiddenElements.HiddenElement2;
+            FourPillarsResult.HourHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement2Value;
 
             //step 10
             FourPillarsResult.YearStemValue = 100;
@@ -122,31 +146,33 @@ namespace BaZiCalculator.Models
             FourPillarsResult.HourStemValue = 100;
 
             //step 11
-            ElementTotal elementTotal = new ElementTotal();
-            elementTotal.WoodTotal = Step11(FourPillarsResult, Stems.YangWood) + Step11(FourPillarsResult, Stems.YinWood);
-            elementTotal.FireTotal = Step11(FourPillarsResult, Stems.YangFire) + Step11(FourPillarsResult, Stems.YinFire);
-            elementTotal.EarthTotal = Step11(FourPillarsResult, Stems.YangEarth) + Step11(FourPillarsResult, Stems.YinEarth);
-            elementTotal.MetalTotal = Step11(FourPillarsResult, Stems.YangMetal) + Step11(FourPillarsResult, Stems.YinMetal);
-            elementTotal.WaterTotal = Step11(FourPillarsResult, Stems.YangWater) + Step11(FourPillarsResult, Stems.YinWater);
+            ElementTotals = new ElementTotal();
+            ElementTotals.WoodTotal = Step11(FourPillarsResult, Stems.YangWood) + Step11(FourPillarsResult, Stems.YinWood);
+            ElementTotals.FireTotal = Step11(FourPillarsResult, Stems.YangFire) + Step11(FourPillarsResult, Stems.YinFire);
+            ElementTotals.EarthTotal = Step11(FourPillarsResult, Stems.YangEarth) + Step11(FourPillarsResult, Stems.YinEarth);
+            ElementTotals.MetalTotal = Step11(FourPillarsResult, Stems.YangMetal) + Step11(FourPillarsResult, Stems.YinMetal);
+            ElementTotals.WaterTotal = Step11(FourPillarsResult, Stems.YangWater) + Step11(FourPillarsResult, Stems.YinWater);
 
             //step 12
             TwelveStageGrowthCycleChart twelveStage = twelveStageGrowthCycleChart.Find((obj) => obj.Wood.Animal == FourPillarsResult.MonthBranch);
-            elementTotal.WoodTotal = elementTotal.WoodTotal * twelveStage.Wood.Percent / 100;
-            elementTotal.FireTotal = elementTotal.FireTotal * twelveStage.Fire.Percent / 100;
-            elementTotal.EarthTotal = elementTotal.EarthTotal * twelveStage.Earth.Percent / 100;
-            elementTotal.MetalTotal = elementTotal.MetalTotal * twelveStage.Metal.Percent / 100;
-            elementTotal.WaterTotal = elementTotal.WaterTotal * twelveStage.Water.Percent / 100;
+            ElementTotals.WoodTotal = ElementTotals.WoodTotal * twelveStage.Wood.Percent / 100;
+            ElementTotals.FireTotal = ElementTotals.FireTotal * twelveStage.Fire.Percent / 100;
+            ElementTotals.EarthTotal = ElementTotals.EarthTotal * twelveStage.Earth.Percent / 100;
+            ElementTotals.MetalTotal = ElementTotals.MetalTotal * twelveStage.Metal.Percent / 100;
+            ElementTotals.WaterTotal = ElementTotals.WaterTotal * twelveStage.Water.Percent / 100;
 
             //step 13
-            int elementTotals = elementTotal.WoodTotal + elementTotal.FireTotal + elementTotal.EarthTotal + elementTotal.MetalTotal + elementTotal.WaterTotal;
-            elementTotal.WoodPercent = elementTotal.WoodTotal / elementTotals;
-            elementTotal.FirePercent = elementTotal.FirePercent / elementTotals;
-            elementTotal.EarthPercent = elementTotal.EarthPercent / elementTotals;
-            elementTotal.MetalPercent = elementTotal.MetalPercent / elementTotals;
-            elementTotal.WaterPercent = elementTotal.WaterPercent / elementTotals;
+            int elementTotals = ElementTotals.WoodTotal + ElementTotals.FireTotal + ElementTotals.EarthTotal + ElementTotals.MetalTotal + ElementTotals.WaterTotal;
+            ElementTotals.WoodPercent = ElementTotals.WoodTotal / elementTotals;
+            ElementTotals.FirePercent = ElementTotals.FirePercent / elementTotals;
+            ElementTotals.EarthPercent = ElementTotals.EarthPercent / elementTotals;
+            ElementTotals.MetalPercent = ElementTotals.MetalPercent / elementTotals;
+            ElementTotals.WaterPercent = ElementTotals.WaterPercent / elementTotals;
 
-            //Step 14 
+            // Step 14
             FourPillarsResult.DayMasterLabel = Step14(FourPillarsResult.DayStem);
+
+            //step 16
 
         }
 
@@ -241,6 +267,107 @@ namespace BaZiCalculator.Models
             }
 
             return dayMaster;
+        }
+        public void Step16(List<HourStemAndBranchChart> chart, List<YinYangMeridianChart> yyChart)
+        {
+            
+            foreach (HourStemAndBranchChart hc in chart)
+            {
+                foreach (Stems s in hc.DayStems)
+                {
+                    switch (s)
+                    {
+                        case Stems.YinFire:
+                            yyChart.Find((obj) => obj.Stem == Stems.YinFire).Count += 1;
+                            TotalYin += 1;
+                                break;
+                        case Stems.YinWood:
+                            yyChart.Find((obj) => obj.Stem == Stems.YinWood).Count += 1;
+                            TotalYin += 1;
+                                break;
+                        case Stems.YinEarth:
+                            yyChart.Find((obj) => obj.Stem == Stems.YinEarth).Count += 1;
+                            TotalYin += 1;
+                                break;
+                        case Stems.YinMetal:
+                            yyChart.Find((obj) => obj.Stem == Stems.YinMetal).Count += 1;
+                            TotalYin += 1;
+                                break;
+                        case Stems.YinWater:
+                            yyChart.Find((obj) => obj.Stem == Stems.YinWater).Count += 1;
+                            TotalYin += 1;
+                                break;
+                        case Stems.YangFire:
+                            yyChart.Find((obj) => obj.Stem == Stems.YangFire).Count += 1;
+                            TotalYang += 1;
+                                break;
+                        case Stems.YangWood:
+                            yyChart.Find((obj) => obj.Stem == Stems.YangWood).Count += 1;
+                            TotalYang += 1;
+                                break;
+                        case Stems.YangEarth:
+                            yyChart.Find((obj) => obj.Stem == Stems.YangEarth).Count += 1;
+                            TotalYang += 1;
+                                break;
+                        case Stems.YangMetal:
+                            yyChart.Find((obj) => obj.Stem == Stems.YangMetal).Count += 1;
+                            TotalYang += 1;
+                                break;
+                        case Stems.YangWater:
+                            yyChart.Find((obj) => obj.Stem == Stems.YangWater).Count += 1;
+                            TotalYang += 1;
+                                break;
+
+                    }
+                    foreach (HourStem h in hc.HourStems)
+                    {
+                        switch (h.Stem)
+                        {
+                            case Stems.YinFire:
+                                yyChart.Find((obj) => obj.Stem == Stems.YinFire).Count += 1;
+                                TotalYin += 1;
+                                break;
+                            case Stems.YinWood:
+                                yyChart.Find((obj) => obj.Stem == Stems.YinWood).Count += 1;
+                                TotalYin += 1;
+                                break;
+                            case Stems.YinEarth:
+                                yyChart.Find((obj) => obj.Stem == Stems.YinEarth).Count += 1;
+                                TotalYin += 1;
+                                break;
+                            case Stems.YinMetal:
+                                yyChart.Find((obj) => obj.Stem == Stems.YinMetal).Count += 1;
+                                TotalYin += 1;
+                                break;
+                            case Stems.YinWater:
+                                yyChart.Find((obj) => obj.Stem == Stems.YinWater).Count += 1;
+                                TotalYin += 1;
+                                break;
+                            case Stems.YangFire:
+                                yyChart.Find((obj) => obj.Stem == Stems.YangFire).Count += 1;
+                                TotalYang += 1;
+                                break;
+                            case Stems.YangWood:
+                                yyChart.Find((obj) => obj.Stem == Stems.YangWood).Count += 1;
+                                TotalYang += 1;
+                                break;
+                            case Stems.YangEarth:
+                                yyChart.Find((obj) => obj.Stem == Stems.YangEarth).Count += 1;
+                                TotalYang += 1;
+                                break;
+                            case Stems.YangMetal:
+                                yyChart.Find((obj) => obj.Stem == Stems.YangMetal).Count += 1;
+                                TotalYang += 1;
+                                break;
+                            case Stems.YangWater:
+                                yyChart.Find((obj) => obj.Stem == Stems.YangWater).Count += 1;
+                                TotalYang += 1;
+                                break;
+
+                        }
+                    }
+                }
+            }
         }
     }
 }

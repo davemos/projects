@@ -6,23 +6,36 @@ namespace BaZiCalculator.ViewModels
 {
     public class HomeViewModel
     {
-        public ChineseCalendarChart ChineseCalendar
+
+        public List<YinYangMeridianChart> YinYangMeridianResult
         {
             get;
             set;
         }
-        public List<StemsAndBranchesCycleOf60> StemsAndBranches
+        public FourPillarsTable FourPillarsResult
         {
             get;
             set;
         }
-        public List<HourStemAndBranchChart> HourStemAndBranch
+        public int TotalYin
+        {
+            get;
+            set;
+        }
+        public int TotalYang
+        {
+            get;
+            set;
+        }
+        public ElementTotal ElementTotals
         {
             get;
             set;
         }
         public HomeViewModel()
         {
+            
+
         }
     }
 }

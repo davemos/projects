@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 using BaZiCalculator.Models;
+using BaZiCalculator.ViewModels;
 
 namespace BaZiCalculator.Controllers
 {
@@ -18,17 +19,16 @@ namespace BaZiCalculator.Controllers
             ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
             ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
-            DataLoad dataLoad = new DataLoad();
-            List <TwelveStageGrowthCycleChart> twelveStageGrowthCycleChart = dataLoad.LoadTwelveStageGrowthCycleChartData();
-            List <ChineseCalendarChart> chineseCalendarChart = dataLoad.LoadChineseCalendarChartData();
-            List <DayBinomialsChart> dayBinomialsChart = dataLoad.LoadDayBinomialsChartData();
-            List <HourStemAndBranchChart> hourStemAndBranchChart = dataLoad.LoadHourStemAndBranchChartData();
-            List <HiddenElementsChart> hiddenElementsChart = dataLoad.LoadHiddenElementsChartData();
-            List <LeapYearMonthBinomialChart> leapYearMonthBinomialChart = dataLoad.LoadLeapYearMonthBinomialChartData();
-            List <MonthBinomialChart> monthBinomialChart = dataLoad.LoadMonthBinomialChartData();
-            List <StemsAndBranchesCycleOf60> stemsAndBranchesCycleOf60 = dataLoad.LoadStemsAndBranchesCycleOf60Data();
-            List <YinYangMeridianChart> yinYangMeridianChart = dataLoad.LoadYinYangMeridianChartData();
-            return View();
+            HomeViewModel homeViewModel = new HomeViewModel();
+            BaZiCalculator.Models.BaZiCalculator baZiCalculator = new Models.BaZiCalculator(new DateTime(1924,7,21), 1030);
+
+            homeViewModel.FourPillarsResult = baZiCalculator.FourPillarsResult;
+            homeViewModel.ElementTotals = baZiCalculator.ElementTotals;
+            homeViewModel.TotalYin = baZiCalculator.TotalYin;
+            homeViewModel.TotalYang = baZiCalculator.TotalYang;
+            homeViewModel.YinYangMeridianResult = baZiCalculator.YinYangMeridianResult;
+
+            return View(homeViewModel);
         }
 
 
