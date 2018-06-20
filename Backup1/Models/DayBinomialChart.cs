@@ -1,24 +1,24 @@
 ﻿using System;
 namespace BaZiCalculator.Models
 {
-    public class YinYangMeridianChart
+    public class DayBinomialsChart
     {
-        public Stems Stem
+        public long Year
         {
             get;
             set;
         }
-        public string Meridian
+        public int Day1Number
         {
             get;
             set;
         }
-        public int Count
+        public bool LeapYear
         {
             get;
             set;
         }
-        public YinYangMeridianChart()
+        public DayBinomialsChart()
         {
         }
     }

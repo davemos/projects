@@ -1,24 +1,24 @@
 ﻿using System;
 namespace BaZiCalculator.Models
 {
-    public class YinYangMeridianChart
+    public class StemsAndBranchesCycleOf60
     {
+        public int Number
+        {
+            get;
+            set;
+        }
         public Stems Stem
         {
             get;
             set;
         }
-        public string Meridian
+        public Animals Branch
         {
             get;
             set;
         }
-        public int Count
-        {
-            get;
-            set;
-        }
-        public YinYangMeridianChart()
+        public StemsAndBranchesCycleOf60()
         {
         }
     }

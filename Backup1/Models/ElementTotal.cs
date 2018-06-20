@@ -1,65 +1,61 @@
 ﻿using System;
-using System.Collections.Generic;
-using BaZiCalculator.Models;
-                    
-namespace BaZiCalculator.ViewModels
+namespace BaZiCalculator.Models
 {
-    public class HomeViewModel
+    public class ElementTotal
     {
-        public DateTime BirthDate
+        public int WoodTotal
         {
             get;
             set;
         }
-        public long BirthTime
+        public int FireTotal
         {
             get;
             set;
         }
-        public int BirthYear
+        public int EarthTotal
         {
             get;
             set;
         }
-        public int BirthMonth
+        public int MetalTotal
         {
             get;
             set;
         }
-        public int BirthDay
+        public int WaterTotal
         {
             get;
             set;
         }
-        public List<YinYangMeridianChart> YinYangMeridianResult
+        public int WoodPercent
         {
             get;
             set;
         }
-        public FourPillarsTable FourPillarsResult
+        public int FirePercent
         {
             get;
             set;
         }
-        public int TotalYin
+        public int EarthPercent
         {
             get;
             set;
         }
-        public int TotalYang
+        public int MetalPercent
         {
             get;
             set;
         }
-        public ElementTotal ElementTotals
+        public int WaterPercent
         {
             get;
             set;
         }
-        public HomeViewModel()
-        {
-            
 
+        public ElementTotal()
+        {
         }
     }
 }
