@@ -271,8 +271,6 @@ namespace BaZiCalculator.Models
         }
         public void Step16(FourPillarsTable chart, List<YinYangMeridianChart> yyChart)
         {
-            int totalYang = 0;
-            int totalYin = 0;
             int total = 0;
 
             yyChart.Find((obj) => obj.Stem == chart.YearStem).Count += 1; total = chart.YearStem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++;
