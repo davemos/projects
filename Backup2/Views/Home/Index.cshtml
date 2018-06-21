@@ -1,0 +1,23 @@
+﻿@model BaZiCalculator.ViewModels.HomeViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Calculator", "Home"))
+{
+<table border="1">
+    <tr>
+        <td>Calculator</td>
+    </tr>
+
+    <tr>
+        <td>@Html.TextBoxFor(m => m.BirthDate) (MM/DD/YYYY)</td>
+        <td>@Html.TextBoxFor(m => m.BirthTime) (military time i.e. 1630 for 4:30PM)</td>
+        <td><button type="submit">Calculate</button></td>
+    </tr>
+   
+</table>
+}
+
