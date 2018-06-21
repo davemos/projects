@@ -1,21 +1,19 @@
 ﻿using System;
 namespace BaZiCalculator.Models
 {
-    public class MonthBinomialChart :IMonthBinomialChart
+    
+    public interface IMonthBinomialChart
     {
+        int Month
+        {
+            get;
+            set;
+        }
 
-        public int Month
+        int Number
         {
             get;
             set;
-        }
-        public int Number
-        {
-            get;
-            set;
-        }
-        public MonthBinomialChart()
-        {
         }
     }
 }

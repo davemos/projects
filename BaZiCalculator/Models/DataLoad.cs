@@ -17,6 +17,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
 
             chineseCalendarChart.Year.Year = 1924;chineseCalendarChart.Year.Number = 1;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1924, 1, 6); monthNumber.Number = 14; monthNumber.Time = 354; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 2, 5);monthNumber.Number = 3;monthNumber.Time = 950;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 3, 6); monthNumber.Number = 4; monthNumber.Time = 413; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 4, 5); monthNumber.Number = 5; monthNumber.Time = 934; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -28,11 +29,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 10, 8); monthNumber.Number = 11; monthNumber.Time = 953; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 11, 8); monthNumber.Number = 12; monthNumber.Time = 30; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1654; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1924, 1, 6); monthNumber.Number = 14; monthNumber.Time = 354; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1925; chineseCalendarChart.Year.Number = 2;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1925, 1, 6); monthNumber.Number = 26; monthNumber.Time = 955; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1537; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 3, 6); monthNumber.Number = 16; monthNumber.Time = 1000; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1523; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -44,11 +45,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 10, 9); monthNumber.Number = 23; monthNumber.Time = 348; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 11, 8); monthNumber.Number = 24; monthNumber.Time = 627; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 12, 7); monthNumber.Number = 25; monthNumber.Time = 2253; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1925, 1, 6); monthNumber.Number = 26; monthNumber.Time = 955; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1926; chineseCalendarChart.Year.Number = 3;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1926, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1545; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 2, 4); monthNumber.Number = 27; monthNumber.Time = 2139; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 3, 5); monthNumber.Number = 28; monthNumber.Time = 1649; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 4, 5); monthNumber.Number = 29; monthNumber.Time = 2119; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -60,23 +61,29 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 10, 9); monthNumber.Number = 35; monthNumber.Time = 925; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 11, 8); monthNumber.Number = 36; monthNumber.Time = 1208; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 12, 8); monthNumber.Number = 37; monthNumber.Time = 439; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1926, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1545; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
-            chineseCalendarChart.Year.Year = 1927; chineseCalendarChart.Year.Number = 4;             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 2, 5); monthNumber.Number = 39; monthNumber.Time = 310; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 3, 6); monthNumber.Number = 40; monthNumber.Time = 2151; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 4, 6); monthNumber.Number = 41; monthNumber.Time = 307; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 5, 6); monthNumber.Number = 42; monthNumber.Time = 2054; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 6, 7); monthNumber.Number = 43; monthNumber.Time = 125; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 7, 8); monthNumber.Number = 44; monthNumber.Time = 1150; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 8, 8); monthNumber.Number = 45; monthNumber.Time = 2132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 9, 9); monthNumber.Number = 46; monthNumber.Time = 6; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 10, 9); monthNumber.Number = 47; monthNumber.Time = 1516; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 11, 8); monthNumber.Number = 48; monthNumber.Time = 1757; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 12, 8); monthNumber.Number = 49; monthNumber.Time = 1027; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 1, 6); monthNumber.Number = 50; monthNumber.Time = 2132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
+            chineseCalendarChart.Year.Year = 1927; chineseCalendarChart.Year.Number = 4;             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1927, 1, 6); monthNumber.Number = 50; monthNumber.Time = 2132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
+            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 2, 5); monthNumber.Number = 39; monthNumber.Time = 310; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 3, 6); monthNumber.Number = 40; monthNumber.Time = 2151; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 4, 6); monthNumber.Number = 41; monthNumber.Time = 307; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 5, 6); monthNumber.Number = 42; monthNumber.Time = 2054; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 6, 7); monthNumber.Number = 43; monthNumber.Time = 125; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 7, 8); monthNumber.Number = 44; monthNumber.Time = 1150; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 8, 8); monthNumber.Number = 45; monthNumber.Time = 2132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 9, 9); monthNumber.Number = 46; monthNumber.Time = 6; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 10, 9); monthNumber.Number = 47; monthNumber.Time = 1516; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 11, 8); monthNumber.Number = 48; monthNumber.Time = 1757; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1927, 12, 8); monthNumber.Number = 49; monthNumber.Time = 1027; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
             chineseCalendarChart = new ChineseCalendarChart();
-            chineseCalendarChart.Year.Year = 1928; chineseCalendarChart.Year.Number = 5;             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 2, 5); monthNumber.Number = 51; monthNumber.Time = 917; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 3, 6); monthNumber.Number = 52; monthNumber.Time = 338; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 4, 5); monthNumber.Number = 53; monthNumber.Time = 855; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 5, 6); monthNumber.Number = 54; monthNumber.Time = 244; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 6, 6); monthNumber.Number = 55; monthNumber.Time = 718; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 7, 7); monthNumber.Number = 56; monthNumber.Time = 1745; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 8, 8); monthNumber.Number = 57; monthNumber.Time = 328; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 9, 8); monthNumber.Number = 58; monthNumber.Time = 602; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 10, 8); monthNumber.Number = 59; monthNumber.Time = 2111; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 11, 7); monthNumber.Number = 60; monthNumber.Time = 2350; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1618; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 1, 6); monthNumber.Number = 2; monthNumber.Time = 323; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
+            chineseCalendarChart.Year.Year = 1928; chineseCalendarChart.Year.Number = 5;             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1928, 1, 6); monthNumber.Number = 2; monthNumber.Time = 323; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
+            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 2, 5); monthNumber.Number = 51; monthNumber.Time = 917; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 3, 6); monthNumber.Number = 52; monthNumber.Time = 338; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 4, 5); monthNumber.Number = 53; monthNumber.Time = 855; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 5, 6); monthNumber.Number = 54; monthNumber.Time = 244; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 6, 6); monthNumber.Number = 55; monthNumber.Time = 718; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 7, 7); monthNumber.Number = 56; monthNumber.Time = 1745; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 8, 8); monthNumber.Number = 57; monthNumber.Time = 328; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 9, 8); monthNumber.Number = 58; monthNumber.Time = 602; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 10, 8); monthNumber.Number = 59; monthNumber.Time = 2111; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 11, 7); monthNumber.Number = 60; monthNumber.Time = 2350; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1928, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1618; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
             chineseCalendarChart = new ChineseCalendarChart();
-            chineseCalendarChart.Year.Year = 1929; chineseCalendarChart.Year.Number = 6;             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1509; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 3, 6); monthNumber.Number = 4; monthNumber.Time = 932; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1452; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 5, 6); monthNumber.Number = 6; monthNumber.Time = 841; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 6, 6); monthNumber.Number = 7; monthNumber.Time = 1311; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 7, 7); monthNumber.Number = 8; monthNumber.Time = 2332; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 8, 8); monthNumber.Number = 9; monthNumber.Time = 909; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 9, 8); monthNumber.Number = 10; monthNumber.Time = 1140; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 10, 9); monthNumber.Number = 11; monthNumber.Time = 248; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 11, 8); monthNumber.Number = 12; monthNumber.Time = 528; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 12, 7); monthNumber.Number = 13; monthNumber.Time = 2157; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 1, 6); monthNumber.Number = 14; monthNumber.Time = 903; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
+            chineseCalendarChart.Year.Year = 1929; chineseCalendarChart.Year.Number = 6;             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1929, 1, 6); monthNumber.Number = 14; monthNumber.Time = 903; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
+            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1509; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 3, 6); monthNumber.Number = 4; monthNumber.Time = 932; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1452; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 5, 6); monthNumber.Number = 6; monthNumber.Time = 841; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 6, 6); monthNumber.Number = 7; monthNumber.Time = 1311; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 7, 7); monthNumber.Number = 8; monthNumber.Time = 2332; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 8, 8); monthNumber.Number = 9; monthNumber.Time = 909; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 9, 8); monthNumber.Number = 10; monthNumber.Time = 1140; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 10, 9); monthNumber.Number = 11; monthNumber.Time = 248; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 11, 8); monthNumber.Number = 12; monthNumber.Time = 528; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1929, 12, 7); monthNumber.Number = 13; monthNumber.Time = 2157; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
             chineseCalendarChart = new ChineseCalendarChart();
-            chineseCalendarChart.Year.Year = 1930; chineseCalendarChart.Year.Number = 7;             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 2, 4); monthNumber.Number = 15; monthNumber.Time = 2052; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 3, 6); monthNumber.Number = 16; monthNumber.Time = 1517; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 4, 5); monthNumber.Number = 17; monthNumber.Time = 2038; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 5, 6); monthNumber.Number = 18; monthNumber.Time = 1428; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 6, 6); monthNumber.Number = 19; monthNumber.Time = 1858; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 7, 8); monthNumber.Number = 20; monthNumber.Time = 520; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 8, 9); monthNumber.Number = 21; monthNumber.Time = 1458; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 9, 9); monthNumber.Number = 22; monthNumber.Time = 1729; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 10, 8); monthNumber.Number = 23; monthNumber.Time = 838; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 11, 8); monthNumber.Number = 24; monthNumber.Time = 1121; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 12, 8); monthNumber.Number = 25; monthNumber.Time = 351; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1456; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
-            chineseCalendarChart = new ChineseCalendarChart();             chineseCalendarChart.Year.Year = 1931; chineseCalendarChart.Year.Number = 8;             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 2, 5); monthNumber.Number = 27; monthNumber.Time = 241; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 3, 6); monthNumber.Number = 28; monthNumber.Time = 2103; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 4, 6); monthNumber.Number = 29; monthNumber.Time = 221; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 5, 6); monthNumber.Number = 30; monthNumber.Time = 2010; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 6, 7); monthNumber.Number = 31; monthNumber.Time = 42; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 7, 8); monthNumber.Number = 32; monthNumber.Time = 1106; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 8, 8); monthNumber.Number = 33; monthNumber.Time = 2045; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 9, 8); monthNumber.Number = 34; monthNumber.Time = 2318; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 10, 9); monthNumber.Number = 35; monthNumber.Time = 1427; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 11, 8); monthNumber.Number = 36; monthNumber.Time = 1710; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 12, 8); monthNumber.Number = 37; monthNumber.Time = 941; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 1, 6); monthNumber.Number = 38; monthNumber.Time = 2046; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
+            chineseCalendarChart.Year.Year = 1930; chineseCalendarChart.Year.Number = 7;             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1930, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1456; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
+            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 2, 4); monthNumber.Number = 15; monthNumber.Time = 2052; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 3, 6); monthNumber.Number = 16; monthNumber.Time = 1517; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 4, 5); monthNumber.Number = 17; monthNumber.Time = 2038; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 5, 6); monthNumber.Number = 18; monthNumber.Time = 1428; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 6, 6); monthNumber.Number = 19; monthNumber.Time = 1858; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 7, 8); monthNumber.Number = 20; monthNumber.Time = 520; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 8, 9); monthNumber.Number = 21; monthNumber.Time = 1458; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 9, 9); monthNumber.Number = 22; monthNumber.Time = 1729; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 10, 8); monthNumber.Number = 23; monthNumber.Time = 838; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 11, 8); monthNumber.Number = 24; monthNumber.Time = 1121; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1930, 12, 8); monthNumber.Number = 25; monthNumber.Time = 351; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
+            chineseCalendarChart = new ChineseCalendarChart();             chineseCalendarChart.Year.Year = 1931; chineseCalendarChart.Year.Number = 8;             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1931, 1, 6); monthNumber.Number = 38; monthNumber.Time = 2046; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
+            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 2, 5); monthNumber.Number = 27; monthNumber.Time = 241; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 3, 6); monthNumber.Number = 28; monthNumber.Time = 2103; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 4, 6); monthNumber.Number = 29; monthNumber.Time = 221; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 5, 6); monthNumber.Number = 30; monthNumber.Time = 2010; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 6, 7); monthNumber.Number = 31; monthNumber.Time = 42; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 7, 8); monthNumber.Number = 32; monthNumber.Time = 1106; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 8, 8); monthNumber.Number = 33; monthNumber.Time = 2045; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 9, 8); monthNumber.Number = 34; monthNumber.Time = 2318; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 10, 9); monthNumber.Number = 35; monthNumber.Time = 1427; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 11, 8); monthNumber.Number = 36; monthNumber.Time = 1710; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1931, 12, 8); monthNumber.Number = 37; monthNumber.Time = 941; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart); 
             chineseCalendarChart = new ChineseCalendarChart();
-            chineseCalendarChart.Year.Year = 1932; chineseCalendarChart.Year.Number = 9;             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 2, 5); monthNumber.Number = 39; monthNumber.Time = 830; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 3, 6); monthNumber.Number = 40; monthNumber.Time = 250; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 4, 5); monthNumber.Number = 41; monthNumber.Time = 807; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 5, 6); monthNumber.Number = 42; monthNumber.Time = 155; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 6, 6); monthNumber.Number = 43; monthNumber.Time = 628; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 7, 7); monthNumber.Number = 44; monthNumber.Time = 1653; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 8, 8); monthNumber.Number = 45; monthNumber.Time = 232; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 9, 8); monthNumber.Number = 46; monthNumber.Time = 503; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 10, 8); monthNumber.Number = 47; monthNumber.Time = 2010; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 11, 7); monthNumber.Number = 48; monthNumber.Time = 2250; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1519; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 1, 6); monthNumber.Number = 50; monthNumber.Time = 224; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart);
+            chineseCalendarChart.Year.Year = 1932; chineseCalendarChart.Year.Number = 9;             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1932, 1, 6); monthNumber.Number = 50; monthNumber.Time = 224; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
+            monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 2, 5); monthNumber.Number = 39; monthNumber.Time = 830; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 3, 6); monthNumber.Number = 40; monthNumber.Time = 250; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 4, 5); monthNumber.Number = 41; monthNumber.Time = 807; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 5, 6); monthNumber.Number = 42; monthNumber.Time = 155; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 6, 6); monthNumber.Number = 43; monthNumber.Time = 628; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 7, 7); monthNumber.Number = 44; monthNumber.Time = 1653; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 8, 8); monthNumber.Number = 45; monthNumber.Time = 232; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 9, 8); monthNumber.Number = 46; monthNumber.Time = 503; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 10, 8); monthNumber.Number = 47; monthNumber.Time = 2010; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 11, 7); monthNumber.Number = 48; monthNumber.Time = 2250; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             monthNumber = new MonthNumber();monthNumber.Month = new DateTime(1932, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1519; chineseCalendarChart.MonthNumberChart.Add(monthNumber);             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1933;chineseCalendarChart.Year.Number = 10;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 1, 6); monthNumber.Number = 2; monthNumber.Time = 817; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1410; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 3, 6); monthNumber.Number = 52; monthNumber.Time = 832; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1351; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -88,11 +95,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 10, 9); monthNumber.Number = 59; monthNumber.Time = 208; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 11, 8); monthNumber.Number = 60; monthNumber.Time = 444; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 12, 7); monthNumber.Number = 1; monthNumber.Time = 2112; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1933, 1, 6); monthNumber.Number = 2; monthNumber.Time = 817;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1934;chineseCalendarChart.Year.Number = 11;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1403; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 2, 4); monthNumber.Number = 3; monthNumber.Time = 2004; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 3, 6); monthNumber.Number = 4; monthNumber.Time = 1427; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1944; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -104,11 +111,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 10, 9); monthNumber.Number = 11; monthNumber.Time = 745; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 11, 8); monthNumber.Number = 12; monthNumber.Time = 1027; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 12, 8); monthNumber.Number = 13; monthNumber.Time = 257; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1934, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1403;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1935;chineseCalendarChart.Year.Number = 12;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1947; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 2, 5); monthNumber.Number = 15; monthNumber.Time = 149; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 3, 6); monthNumber.Number = 16; monthNumber.Time = 2011; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 4, 6); monthNumber.Number = 17; monthNumber.Time = 127; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -120,11 +127,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 10, 9); monthNumber.Number = 23; monthNumber.Time = 1336; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 11, 8); monthNumber.Number = 24; monthNumber.Time = 1618; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 12, 8); monthNumber.Number = 25; monthNumber.Time = 845; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1935, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1947;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1936;chineseCalendarChart.Year.Number = 13;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 1, 6); monthNumber.Number = 38; monthNumber.Time = 144; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 2, 5); monthNumber.Number = 27; monthNumber.Time = 730; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 3, 6); monthNumber.Number = 28; monthNumber.Time = 150; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 4, 5); monthNumber.Number = 29; monthNumber.Time = 707; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -136,11 +143,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1933; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 11, 7); monthNumber.Number = 36; monthNumber.Time = 2215; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1443; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1936, 1, 6); monthNumber.Number = 38; monthNumber.Time = 144;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1937;chineseCalendarChart.Year.Number = 14;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 1, 6); monthNumber.Number = 50; monthNumber.Time = 732; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1326; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 3, 5); monthNumber.Number = 40; monthNumber.Time = 745; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1302; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -152,11 +159,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 10, 9); monthNumber.Number = 47; monthNumber.Time = 111; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 11, 8); monthNumber.Number = 48; monthNumber.Time = 346; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 12, 7); monthNumber.Number = 49; monthNumber.Time = 2027; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1937, 1, 6); monthNumber.Number = 50; monthNumber.Time = 732;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1938;chineseCalendarChart.Year.Number = 15;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1323; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1915; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 3, 6); monthNumber.Number = 52; monthNumber.Time = 1334; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1849; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -168,11 +175,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 10, 9); monthNumber.Number = 59; monthNumber.Time = 702; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 11, 8); monthNumber.Number = 60; monthNumber.Time = 949; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 12, 8); monthNumber.Number = 1; monthNumber.Time = 223; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1938, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1323;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1939;chineseCalendarChart.Year.Number = 16;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1924; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 2, 5); monthNumber.Number = 3; monthNumber.Time = 111; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 3, 6); monthNumber.Number = 4; monthNumber.Time = 1927; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 4, 6); monthNumber.Number = 5; monthNumber.Time = 38; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -184,11 +191,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 10, 9); monthNumber.Number = 11; monthNumber.Time = 1257; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 11, 8); monthNumber.Number = 12; monthNumber.Time = 1540; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 12, 8); monthNumber.Number = 13; monthNumber.Time = 818; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1939, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1924;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1940;chineseCalendarChart.Year.Number = 17;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 1, 6); monthNumber.Number = 26; monthNumber.Time = 104; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 2, 5); monthNumber.Number = 15; monthNumber.Time = 708; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 3, 6); monthNumber.Number = 16; monthNumber.Time = 124; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 4, 5); monthNumber.Number = 17; monthNumber.Time = 635; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -200,11 +207,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1843; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 11, 7); monthNumber.Number = 24; monthNumber.Time = 2127; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1358; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1940, 1, 6); monthNumber.Number = 26; monthNumber.Time = 104;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1941;chineseCalendarChart.Year.Number = 18;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 1, 6); monthNumber.Number = 38; monthNumber.Time = 703; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1250; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 3, 6); monthNumber.Number = 28; monthNumber.Time = 710; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1225; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -216,7 +223,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 10, 9); monthNumber.Number = 35; monthNumber.Time = 39; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 11, 8); monthNumber.Number = 36; monthNumber.Time = 325; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1957; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1941, 1, 6); monthNumber.Number = 38; monthNumber.Time = 703;chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             LoadChineseCalendarChartData1942_1950(chineseCalendarChartList);
@@ -239,6 +245,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1942; chineseCalendarChart.Year.Number = 19;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1255; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1849; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 3, 6); monthNumber.Number = 40; monthNumber.Time = 1310; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1824; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -250,11 +257,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 10, 9); monthNumber.Number = 47; monthNumber.Time = 622; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 11, 8); monthNumber.Number = 48; monthNumber.Time = 912; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 12, 8); monthNumber.Number = 49; monthNumber.Time = 147; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1942, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1255; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1943; chineseCalendarChart.Year.Number = 20;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1840; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 2, 5); monthNumber.Number = 51; monthNumber.Time = 40; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 3, 6); monthNumber.Number = 52; monthNumber.Time = 1859; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 4, 6); monthNumber.Number = 53; monthNumber.Time = 12; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -266,11 +273,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 10, 9); monthNumber.Number = 59; monthNumber.Time = 1211; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 11, 8); monthNumber.Number = 60; monthNumber.Time = 1459; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 12, 8); monthNumber.Number = 1; monthNumber.Time = 733; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1943, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1840; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1944; chineseCalendarChart.Year.Number = 21;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 1, 6); monthNumber.Number = 14; monthNumber.Time = 35; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 2, 5); monthNumber.Number = 3; monthNumber.Time = 623; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 3, 6); monthNumber.Number = 4; monthNumber.Time = 41; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 4, 5); monthNumber.Number = 5; monthNumber.Time = 554; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -282,11 +289,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1809; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 11, 7); monthNumber.Number = 12; monthNumber.Time = 2055; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1328; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1944, 1, 6); monthNumber.Number = 14; monthNumber.Time = 35; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1945; chineseCalendarChart.Year.Number = 22;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 1, 6); monthNumber.Number = 26; monthNumber.Time = 617; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1220; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 3, 6); monthNumber.Number = 16; monthNumber.Time = 638; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1152; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -298,11 +305,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 10, 8); monthNumber.Number = 23; monthNumber.Time = 2350; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 11, 8); monthNumber.Number = 24; monthNumber.Time = 235; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1908; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1945, 1, 6); monthNumber.Number = 26; monthNumber.Time = 617; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1946; chineseCalendarChart.Year.Number = 23;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1801; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1805; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 3, 6); monthNumber.Number = 28; monthNumber.Time = 1225; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1739; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -314,11 +321,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 10, 9); monthNumber.Number = 35; monthNumber.Time = 542; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 11, 8); monthNumber.Number = 36; monthNumber.Time = 828; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 12, 8); monthNumber.Number = 37; monthNumber.Time = 101; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1946, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1801; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1947; chineseCalendarChart.Year.Number = 24;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1801; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 2, 4); monthNumber.Number = 39; monthNumber.Time = 2355; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 3, 6); monthNumber.Number = 40; monthNumber.Time = 1812; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 4, 5); monthNumber.Number = 41; monthNumber.Time = 2323; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -330,11 +337,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 10, 9); monthNumber.Number = 47; monthNumber.Time = 1132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 11, 8); monthNumber.Number = 48; monthNumber.Time = 1419; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 12, 7); monthNumber.Number = 49; monthNumber.Time = 653; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1947, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1801; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1948; chineseCalendarChart.Year.Number = 25;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 1, 5); monthNumber.Number = 2; monthNumber.Time = 2342; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 2, 5); monthNumber.Number = 51; monthNumber.Time = 543; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 3, 5); monthNumber.Number = 52; monthNumber.Time = 2358; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 4, 5); monthNumber.Number = 53; monthNumber.Time = 510; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -346,11 +353,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 10, 8); monthNumber.Number = 59; monthNumber.Time = 1721; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 11, 7); monthNumber.Number = 60; monthNumber.Time = 2007; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1238; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1948, 1, 5); monthNumber.Number = 2; monthNumber.Time = 2342; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1949; chineseCalendarChart.Year.Number = 26;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 1, 6); monthNumber.Number = 14; monthNumber.Time = 539; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1123; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 3, 6); monthNumber.Number = 4; monthNumber.Time = 540; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1052; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -362,11 +369,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 10, 8); monthNumber.Number = 11; monthNumber.Time = 2312; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 11, 8); monthNumber.Number = 12; monthNumber.Time = 200; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1834; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1949, 1, 6); monthNumber.Number = 14; monthNumber.Time = 539; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1950; chineseCalendarChart.Year.Number = 27;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1131; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1721; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 3, 6); monthNumber.Number = 16; monthNumber.Time = 1136; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1645; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -378,7 +385,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 10, 9); monthNumber.Number = 23; monthNumber.Time = 452; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 11, 8); monthNumber.Number = 24; monthNumber.Time = 744; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 12, 8); monthNumber.Number = 25; monthNumber.Time = 22; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1950, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1131; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
         }
@@ -388,6 +394,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1951; chineseCalendarChart.Year.Number = 28;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1710; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 2, 4); monthNumber.Number = 27; monthNumber.Time = 2314; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 3, 6); monthNumber.Number = 28; monthNumber.Time = 1727; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 4, 5); monthNumber.Number = 29; monthNumber.Time = 2233; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -399,11 +406,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 10, 9); monthNumber.Number = 35; monthNumber.Time = 1037; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 11, 8); monthNumber.Number = 36; monthNumber.Time = 1327; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 12, 8); monthNumber.Number = 37; monthNumber.Time = 603; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1951, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1710; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1952; chineseCalendarChart.Year.Number = 29;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 1, 5); monthNumber.Number = 50; monthNumber.Time = 2303; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 2, 5); monthNumber.Number = 39; monthNumber.Time = 454; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 3, 5); monthNumber.Number = 40; monthNumber.Time = 2308; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 4, 5); monthNumber.Number = 41; monthNumber.Time = 416; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -415,11 +422,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1633; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 11, 7); monthNumber.Number = 48; monthNumber.Time = 1922; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1156; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1952, 1, 5); monthNumber.Number = 50; monthNumber.Time = 2303; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1953; chineseCalendarChart.Year.Number = 30;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 1, 6); monthNumber.Number = 2; monthNumber.Time = 446; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1046; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 3, 6); monthNumber.Number = 52; monthNumber.Time = 503; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1013; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -431,11 +438,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 10, 8); monthNumber.Number = 59; monthNumber.Time = 2211; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 11, 8); monthNumber.Number = 60; monthNumber.Time = 102; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1738; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1953, 1, 6); monthNumber.Number = 2; monthNumber.Time = 446; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1954; chineseCalendarChart.Year.Number = 31;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1036; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1631; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 3, 6); monthNumber.Number = 4; monthNumber.Time = 1049; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1600; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -447,11 +454,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 10, 9); monthNumber.Number = 11; monthNumber.Time = 358; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 11, 8); monthNumber.Number = 12; monthNumber.Time = 651; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 12, 7); monthNumber.Number = 13; monthNumber.Time = 2329; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1954, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1036; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1955; chineseCalendarChart.Year.Number = 32;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1631; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 2, 4); monthNumber.Number = 15; monthNumber.Time = 2218; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 3, 6); monthNumber.Number = 16; monthNumber.Time = 1632; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 4, 5); monthNumber.Number = 17; monthNumber.Time = 2139; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -463,11 +470,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 10, 9); monthNumber.Number = 23; monthNumber.Time = 953; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 11, 8); monthNumber.Number = 24; monthNumber.Time = 1246; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 12, 8); monthNumber.Number = 25; monthNumber.Time = 523; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1955, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1631; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1956; chineseCalendarChart.Year.Number = 33;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 1, 5); monthNumber.Number = 38; monthNumber.Time = 2211; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 2, 5); monthNumber.Number = 27; monthNumber.Time = 413; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 3, 5); monthNumber.Number = 28; monthNumber.Time = 2225; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 4, 5); monthNumber.Number = 29; monthNumber.Time = 332; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -479,11 +486,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1537; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 11, 7); monthNumber.Number = 36; monthNumber.Time = 1827; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1103; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1956, 1, 5); monthNumber.Number = 38; monthNumber.Time = 2211; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1957; chineseCalendarChart.Year.Number = 34;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 1, 6); monthNumber.Number = 50; monthNumber.Time = 405; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 2, 4); monthNumber.Number = 39; monthNumber.Time = 955; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 3, 6); monthNumber.Number = 40; monthNumber.Time = 411; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 4, 5); monthNumber.Number = 41; monthNumber.Time = 919; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -495,11 +502,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 10, 8); monthNumber.Number = 47; monthNumber.Time = 2131; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 11, 8); monthNumber.Number = 48; monthNumber.Time = 1221; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1657; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1957, 1, 6); monthNumber.Number = 50; monthNumber.Time = 405; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1958; chineseCalendarChart.Year.Number = 35;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 1, 6); monthNumber.Number = 2; monthNumber.Time = 959; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1550; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 3, 6); monthNumber.Number = 52; monthNumber.Time = 1006; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1513; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -511,11 +518,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 10, 9); monthNumber.Number = 59; monthNumber.Time = 320; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 11, 8); monthNumber.Number = 60; monthNumber.Time = 613; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 12, 7); monthNumber.Number = 1; monthNumber.Time = 2250; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1958, 1, 6); monthNumber.Number = 2; monthNumber.Time = 959; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1959; chineseCalendarChart.Year.Number = 36;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1543; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 2, 4); monthNumber.Number = 3; monthNumber.Time = 2143; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 3, 6); monthNumber.Number = 4; monthNumber.Time = 1557; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 4, 5); monthNumber.Number = 5; monthNumber.Time = 2104; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -527,7 +534,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 10, 9); monthNumber.Number = 11; monthNumber.Time = 911; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 11, 8); monthNumber.Number = 12; monthNumber.Time = 1203; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 12, 8); monthNumber.Number = 13; monthNumber.Time = 438; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1959, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1543; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
 
@@ -538,6 +544,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1960; chineseCalendarChart.Year.Number = 37;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2143; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 2, 5); monthNumber.Number = 15; monthNumber.Time = 323; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 3, 6); monthNumber.Number = 16; monthNumber.Time = 2136; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 4, 5); monthNumber.Number = 17; monthNumber.Time = 244; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -549,11 +556,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1509; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1802; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1038; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1960, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2143; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1961; chineseCalendarChart.Year.Number = 38;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 1, 6); monthNumber.Number = 38; monthNumber.Time = 335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 2, 4); monthNumber.Number = 27; monthNumber.Time = 923; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 3, 6); monthNumber.Number = 28; monthNumber.Time = 335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 4, 5); monthNumber.Number = 29; monthNumber.Time = 842; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -565,11 +572,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 10, 8); monthNumber.Number = 35; monthNumber.Time = 2051; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 11, 7); monthNumber.Number = 36; monthNumber.Time = 2346; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1626; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1961, 1, 6); monthNumber.Number = 38; monthNumber.Time = 335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1962; chineseCalendarChart.Year.Number = 39;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 1, 6); monthNumber.Number = 50; monthNumber.Time = 927; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1518; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 3, 6); monthNumber.Number = 40; monthNumber.Time = 930; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1434; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -581,11 +588,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 10, 9); monthNumber.Number = 47; monthNumber.Time = 238; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 11, 8); monthNumber.Number = 48; monthNumber.Time = 535; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 12, 7); monthNumber.Number = 49; monthNumber.Time = 2217; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1962, 1, 6); monthNumber.Number = 50; monthNumber.Time = 927; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1963; chineseCalendarChart.Year.Number = 40;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1522; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 2, 4); monthNumber.Number = 51; monthNumber.Time = 2108; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 3, 6); monthNumber.Number = 52; monthNumber.Time = 1517; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 4, 5); monthNumber.Number = 53; monthNumber.Time = 2019; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -597,11 +604,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 10, 9); monthNumber.Number = 59; monthNumber.Time = 836; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 11, 8); monthNumber.Number = 60; monthNumber.Time = 1132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 12, 8); monthNumber.Number = 1; monthNumber.Time = 413; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1963, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1522; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1964; chineseCalendarChart.Year.Number = 41;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 1, 5); monthNumber.Number = 14; monthNumber.Time = 2102; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 2, 5); monthNumber.Number = 3; monthNumber.Time = 305; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 3, 5); monthNumber.Number = 4; monthNumber.Time = 2116; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 4, 5); monthNumber.Number = 5; monthNumber.Time = 218; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -613,11 +620,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1422; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 11, 7); monthNumber.Number = 12; monthNumber.Time = 1715; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 12, 7); monthNumber.Number = 13; monthNumber.Time = 953; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1964, 1, 5); monthNumber.Number = 14; monthNumber.Time = 2102; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1965; chineseCalendarChart.Year.Number = 42;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 1, 5); monthNumber.Number = 26; monthNumber.Time = 255; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 2, 4); monthNumber.Number = 15; monthNumber.Time = 846; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 3, 6); monthNumber.Number = 16; monthNumber.Time = 301; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 4, 5); monthNumber.Number = 17; monthNumber.Time = 807; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -629,11 +636,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 10, 8); monthNumber.Number = 23; monthNumber.Time = 2011; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 11, 7); monthNumber.Number = 24; monthNumber.Time = 2307; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1546; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 1, 5); monthNumber.Number = 26; monthNumber.Time = 255; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1966; chineseCalendarChart.Year.Number = 43;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 1, 6); monthNumber.Number = 38; monthNumber.Time = 848; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1438; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 3, 6); monthNumber.Number = 28; monthNumber.Time = 851; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1357; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -645,11 +652,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 10, 9); monthNumber.Number = 35; monthNumber.Time = 157; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 11, 8); monthNumber.Number = 36; monthNumber.Time = 456; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 12, 7); monthNumber.Number = 37; monthNumber.Time = 2138; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1966, 1, 6); monthNumber.Number = 38; monthNumber.Time = 848; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            chineseCalendarChartList.Add(chineseCalendarChart);
+             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1967; chineseCalendarChart.Year.Number = 44;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1426; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 2, 4); monthNumber.Number = 39; monthNumber.Time = 2031; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 3, 6); monthNumber.Number = 40; monthNumber.Time = 1442; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1945; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -661,11 +668,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 10, 9); monthNumber.Number = 47; monthNumber.Time = 742; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 11, 8); monthNumber.Number = 48; monthNumber.Time = 1038; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 12, 8); monthNumber.Number = 49; monthNumber.Time = 318; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1967, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1426; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1968; chineseCalendarChart.Year.Number = 45;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 1, 5); monthNumber.Number = 2; monthNumber.Time = 2017; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 2, 5); monthNumber.Number = 51; monthNumber.Time = 208; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 3, 5); monthNumber.Number = 52; monthNumber.Time = 2018; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 4, 5); monthNumber.Number = 53; monthNumber.Time = 121; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -677,7 +684,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 10, 8); monthNumber.Number = 59; monthNumber.Time = 1335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 11, 7); monthNumber.Number = 60; monthNumber.Time = 1629; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 12, 7); monthNumber.Number = 1; monthNumber.Time = 909; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1968, 1, 5); monthNumber.Number = 2; monthNumber.Time = 2017; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
         public void LoadChineseCalendarChartData1969_1977(List<ChineseCalendarChart> chineseCalendarChartList)
@@ -686,6 +692,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1969; chineseCalendarChart.Year.Number = 46;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 1, 6); monthNumber.Number = 14; monthNumber.Time = 159; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 2, 4); monthNumber.Number = 3; monthNumber.Time = 759; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 3, 6); monthNumber.Number = 4; monthNumber.Time = 211; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 4, 5); monthNumber.Number = 5; monthNumber.Time = 715; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -697,11 +704,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1917; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 11, 7); monthNumber.Number = 12; monthNumber.Time = 2212; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1451; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1969, 1, 6); monthNumber.Number = 14; monthNumber.Time = 159; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1970; chineseCalendarChart.Year.Number = 47;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 1, 6); monthNumber.Number = 26; monthNumber.Time = 745; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1346; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 3, 6); monthNumber.Number = 16; monthNumber.Time = 751; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1254; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -713,11 +720,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 10, 9); monthNumber.Number = 23; monthNumber.Time = 106; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 11, 8); monthNumber.Number = 24; monthNumber.Time = 401; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 12, 7); monthNumber.Number = 25; monthNumber.Time = 2141; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1970, 1, 6); monthNumber.Number = 26; monthNumber.Time = 745; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1971; chineseCalendarChart.Year.Number = 48;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1343; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1926; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 3, 6); monthNumber.Number = 28; monthNumber.Time = 1335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1836; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -729,11 +736,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 10, 9); monthNumber.Number = 35; monthNumber.Time = 659; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 11, 8); monthNumber.Number = 36; monthNumber.Time = 957; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 12, 8); monthNumber.Number = 37; monthNumber.Time = 236; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1971, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1343; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1972; chineseCalendarChart.Year.Number = 49;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1926; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 2, 5); monthNumber.Number = 39; monthNumber.Time = 1320; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 3, 5); monthNumber.Number = 40; monthNumber.Time = 1928; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1229; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -745,11 +752,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1442; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 11, 7); monthNumber.Number = 48; monthNumber.Time = 1540; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 12, 7); monthNumber.Number = 49; monthNumber.Time = 819; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1972, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1926; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1973; chineseCalendarChart.Year.Number = 50;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 1, 6); monthNumber.Number = 2; monthNumber.Time = 120; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 2, 4); monthNumber.Number = 51; monthNumber.Time = 704; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 3, 6); monthNumber.Number = 52; monthNumber.Time = 113; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 4, 5); monthNumber.Number = 53; monthNumber.Time = 614; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -761,11 +768,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 10, 8); monthNumber.Number = 59; monthNumber.Time = 1827; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 11, 7); monthNumber.Number = 60; monthNumber.Time = 2128; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1411; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1973, 1, 6); monthNumber.Number = 2; monthNumber.Time = 120; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1974; chineseCalendarChart.Year.Number = 51;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 1, 6); monthNumber.Number = 14; monthNumber.Time = 718; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1300; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 3, 6); monthNumber.Number = 4; monthNumber.Time = 707; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1205; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -777,11 +784,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 10, 9); monthNumber.Number = 11; monthNumber.Time = 15; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 11, 8); monthNumber.Number = 12; monthNumber.Time = 318; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 12, 7); monthNumber.Number = 13; monthNumber.Time = 2005; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1974, 1, 6); monthNumber.Number = 14; monthNumber.Time = 718; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1975; chineseCalendarChart.Year.Number = 52;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1258; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1975, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1859; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1975, 3, 6); monthNumber.Number = 16; monthNumber.Time = 1306; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1975, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1802; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -793,11 +800,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1975, 10, 9); monthNumber.Number = 23; monthNumber.Time = 602; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1975, 11, 8); monthNumber.Number = 24; monthNumber.Time = 903; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1975, 12, 8); monthNumber.Number = 25; monthNumber.Time = 146; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1965, 1, 6); monthNumber.Number = 26; monthNumber.Time = 1258; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1976; chineseCalendarChart.Year.Number = 53;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1851; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 2, 5); monthNumber.Number = 27; monthNumber.Time = 40; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 3, 5); monthNumber.Number = 28; monthNumber.Time = 1848; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 4, 4); monthNumber.Number = 29; monthNumber.Time = 2347; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -809,11 +816,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1158; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 11, 7); monthNumber.Number = 36; monthNumber.Time = 1459; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 12, 7); monthNumber.Number = 37; monthNumber.Time = 741; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1976, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1851; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1977; chineseCalendarChart.Year.Number = 54;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 1, 6); monthNumber.Number = 50; monthNumber.Time = 43; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 2, 4); monthNumber.Number = 39; monthNumber.Time = 634; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 3, 6); monthNumber.Number = 40; monthNumber.Time = 44; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 4, 5); monthNumber.Number = 41; monthNumber.Time = 546; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -825,7 +832,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1744; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 11, 7); monthNumber.Number = 48; monthNumber.Time = 2046; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1331; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1977, 1, 6); monthNumber.Number = 50; monthNumber.Time = 43; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
         public void LoadChineseCalendarChartData1978_1983(List<ChineseCalendarChart> chineseCalendarChartList)
@@ -834,6 +840,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1978; chineseCalendarChart.Year.Number = 55;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 1, 6); monthNumber.Number = 2; monthNumber.Time = 632; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1227; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 3, 6); monthNumber.Number = 52; monthNumber.Time = 638; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1139; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -845,11 +852,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 10, 8); monthNumber.Number = 59; monthNumber.Time = 2331; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 11, 8); monthNumber.Number = 60; monthNumber.Time = 234; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1920; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1978, 1, 6); monthNumber.Number = 2; monthNumber.Time = 632; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1979; chineseCalendarChart.Year.Number = 56;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1229; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1813; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 3, 6); monthNumber.Number = 4; monthNumber.Time = 1220; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1718; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -861,11 +868,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 10, 9); monthNumber.Number = 11; monthNumber.Time = 530; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 11, 8); monthNumber.Number = 12; monthNumber.Time = 833; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 12, 8); monthNumber.Number = 13; monthNumber.Time = 118; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1979, 1, 6); monthNumber.Number = 14; monthNumber.Time = 1229; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1980; chineseCalendarChart.Year.Number = 57;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1813; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 2, 5); monthNumber.Number = 15; monthNumber.Time = 10; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 3, 5); monthNumber.Number = 16; monthNumber.Time = 1817; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 4, 4); monthNumber.Number = 17; monthNumber.Time = 2315; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -877,11 +884,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1119; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1418; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 12, 7); monthNumber.Number = 25; monthNumber.Time = 702; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1980, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1813; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1981; chineseCalendarChart.Year.Number = 58;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 1, 6); monthNumber.Number = 38; monthNumber.Time = 03; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 2, 4); monthNumber.Number = 27; monthNumber.Time = 556; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 3, 6); monthNumber.Number = 28; monthNumber.Time = 05; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 4, 5); monthNumber.Number = 29; monthNumber.Time = 505; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -893,11 +900,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1710; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 11, 7); monthNumber.Number = 36; monthNumber.Time = 2020; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1251; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1981, 1, 6); monthNumber.Number = 38; monthNumber.Time = 03; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1982; chineseCalendarChart.Year.Number = 59;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 1, 6); monthNumber.Number = 50; monthNumber.Time = 559; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1146; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 3, 6); monthNumber.Number = 40; monthNumber.Time = 555; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1053; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -909,11 +916,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 10, 8); monthNumber.Number = 47; monthNumber.Time = 2302; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 11, 8); monthNumber.Number = 48; monthNumber.Time = 204; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1848; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1982, 1, 6); monthNumber.Number = 50; monthNumber.Time = 559; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1983; chineseCalendarChart.Year.Number = 60;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1141; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1740; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 3, 6); monthNumber.Number = 52; monthNumber.Time = 1147; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1645; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -925,7 +932,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 10, 9); monthNumber.Number = 59; monthNumber.Time = 451; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 11, 8); monthNumber.Number = 60; monthNumber.Time = 753; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 12, 8); monthNumber.Number = 1; monthNumber.Time = 34; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1983, 1, 6); monthNumber.Number = 2; monthNumber.Time = 1141; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
         public void LoadChineseCalendarChartData1984_1989(List<ChineseCalendarChart> chineseCalendarChartList)
@@ -934,6 +940,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1984; chineseCalendarChart.Year.Number = 1;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1735; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1119; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 3, 5); monthNumber.Number = 4; monthNumber.Time = 1725; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 4, 4); monthNumber.Number = 5; monthNumber.Time = 2222; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -945,11 +952,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1043; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 11, 7); monthNumber.Number = 12; monthNumber.Time = 1345; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 12, 7); monthNumber.Number = 13; monthNumber.Time = 628; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1984, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1735; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1985; chineseCalendarChart.Year.Number = 2;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2329; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 2, 4); monthNumber.Number = 15; monthNumber.Time = 512; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 3, 5); monthNumber.Number = 16; monthNumber.Time = 2316; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 4, 5); monthNumber.Number = 17; monthNumber.Time = 414; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -961,11 +968,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1624; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1929; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1216; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1985, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2329; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1986; chineseCalendarChart.Year.Number = 3;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 1, 6); monthNumber.Number = 38; monthNumber.Time = 513; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1109; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 3, 6); monthNumber.Number = 28; monthNumber.Time = 511; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1005; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -977,11 +984,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 10, 8); monthNumber.Number = 35; monthNumber.Time = 2208; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 11, 8); monthNumber.Number = 36; monthNumber.Time = 112; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1802; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1986, 1, 6); monthNumber.Number = 38; monthNumber.Time = 513; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1987; chineseCalendarChart.Year.Number = 4;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1104; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1652; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 3, 6); monthNumber.Number = 40; monthNumber.Time = 1055; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1544; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -993,11 +1000,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 10, 9); monthNumber.Number = 47; monthNumber.Time = 359; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 11, 8); monthNumber.Number = 48; monthNumber.Time = 705; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 12, 7); monthNumber.Number = 49; monthNumber.Time = 2351; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1987, 1, 6); monthNumber.Number = 50; monthNumber.Time = 1104; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1988; chineseCalendarChart.Year.Number = 5;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 1, 5); monthNumber.Number = 2; monthNumber.Time = 1645; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 2, 4); monthNumber.Number = 51; monthNumber.Time = 2243; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 3, 5); monthNumber.Number = 52; monthNumber.Time = 1646; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 4, 4); monthNumber.Number = 53; monthNumber.Time = 2138; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1009,11 +1016,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 10, 8); monthNumber.Number = 59; monthNumber.Time = 944; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 11, 7); monthNumber.Number = 60; monthNumber.Time = 1248; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 12, 7); monthNumber.Number = 1; monthNumber.Time = 534; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1988, 1, 5); monthNumber.Number = 2; monthNumber.Time = 1645; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1989; chineseCalendarChart.Year.Number = 6;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 1, 5); monthNumber.Number = 14; monthNumber.Time = 2234; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 2, 4); monthNumber.Number = 3; monthNumber.Time = 427; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 3, 5); monthNumber.Number = 4; monthNumber.Time = 2234; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 4, 5); monthNumber.Number = 5; monthNumber.Time = 330; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1025,7 +1032,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1528; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 11, 7); monthNumber.Number = 12; monthNumber.Time = 1834; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1121; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1989, 1, 5); monthNumber.Number = 14; monthNumber.Time = 2234; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
         public void LoadChineseCalendarChartData1990_1998(List<ChineseCalendarChart> chineseCalendarChartList)
@@ -1034,6 +1040,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1990; chineseCalendarChart.Year.Number = 7;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 1, 6); monthNumber.Number = 26; monthNumber.Time = 428; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1015; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 3, 6); monthNumber.Number = 16; monthNumber.Time = 421; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 4, 5); monthNumber.Number = 17; monthNumber.Time = 914; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1045,11 +1052,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 10, 8); monthNumber.Number = 23; monthNumber.Time = 2113; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 11, 8); monthNumber.Number = 24; monthNumber.Time = 23; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1714; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1990, 1, 6); monthNumber.Number = 26; monthNumber.Time = 428; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1991; chineseCalendarChart.Year.Number = 8;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1009; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1608; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 3, 6); monthNumber.Number = 28; monthNumber.Time = 1013; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1504; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1061,11 +1068,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 10, 9); monthNumber.Number = 35; monthNumber.Time = 301; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 11, 8); monthNumber.Number = 36; monthNumber.Time = 608; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 12, 7); monthNumber.Number = 37; monthNumber.Time = 2256; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1991, 1, 6); monthNumber.Number = 38; monthNumber.Time = 1009; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1992; chineseCalendarChart.Year.Number = 9;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1557; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 2, 4); monthNumber.Number = 39; monthNumber.Time = 2148; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 3, 5); monthNumber.Number = 40; monthNumber.Time = 1552; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 4, 4); monthNumber.Number = 41; monthNumber.Time = 2045; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1077,11 +1084,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 10, 8); monthNumber.Number = 47; monthNumber.Time = 852; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 11, 7); monthNumber.Number = 48; monthNumber.Time = 1157; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 12, 7); monthNumber.Number = 49; monthNumber.Time = 444; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1992, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1557; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1993; chineseCalendarChart.Year.Number = 10;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 1, 5); monthNumber.Number = 2; monthNumber.Time = 2146; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 2, 4); monthNumber.Number = 51; monthNumber.Time = 338; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 3, 5); monthNumber.Number = 52; monthNumber.Time = 2142; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 4, 5); monthNumber.Number = 53; monthNumber.Time = 236; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1093,11 +1100,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 10, 8); monthNumber.Number = 59; monthNumber.Time = 1441; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 11, 7); monthNumber.Number = 60; monthNumber.Time = 1746; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1033; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1993, 1, 5); monthNumber.Number = 2; monthNumber.Time = 2146; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1994; chineseCalendarChart.Year.Number = 11;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 1, 6); monthNumber.Number = 14; monthNumber.Time = 334; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 2, 4); monthNumber.Number = 3; monthNumber.Time = 931; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 3, 6); monthNumber.Number = 4; monthNumber.Time = 337; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 4, 5); monthNumber.Number = 5; monthNumber.Time = 831; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1109,11 +1116,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 10, 8); monthNumber.Number = 11; monthNumber.Time = 2030; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 11, 7); monthNumber.Number = 12; monthNumber.Time = 2336; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1624; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1994, 1, 6); monthNumber.Number = 14; monthNumber.Time = 334; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1995; chineseCalendarChart.Year.Number = 12;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 1, 6); monthNumber.Number = 26; monthNumber.Time = 931; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1514; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 3, 6); monthNumber.Number = 16; monthNumber.Time = 916; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1409; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1125,11 +1132,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 10, 9); monthNumber.Number = 23; monthNumber.Time = 227; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 11, 8); monthNumber.Number = 24; monthNumber.Time = 535; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 12, 7); monthNumber.Number = 25; monthNumber.Time = 2222; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1995, 1, 6); monthNumber.Number = 26; monthNumber.Time = 931; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1996; chineseCalendarChart.Year.Number = 13;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1522; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 2, 4); monthNumber.Number = 27; monthNumber.Time = 2108; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 3, 5); monthNumber.Number = 28; monthNumber.Time = 1510; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 4, 4); monthNumber.Number = 29; monthNumber.Time = 2003; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1141,11 +1148,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 10, 8); monthNumber.Number = 35; monthNumber.Time = 818; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 11, 7); monthNumber.Number = 36; monthNumber.Time = 1126; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 12, 7); monthNumber.Number = 37; monthNumber.Time = 413; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1996, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1522; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1997; chineseCalendarChart.Year.Number = 14;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 1, 5); monthNumber.Number = 50; monthNumber.Time = 2111; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 2, 4); monthNumber.Number = 39; monthNumber.Time = 304; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 3, 5); monthNumber.Number = 40; monthNumber.Time = 2114; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 4, 5); monthNumber.Number = 41; monthNumber.Time = 217; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1157,11 +1164,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1427; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 11, 7); monthNumber.Number = 48; monthNumber.Time = 1722; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1002; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1997, 1, 5); monthNumber.Number = 50; monthNumber.Time = 2111; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1998; chineseCalendarChart.Year.Number = 15;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 1, 6); monthNumber.Number = 2; monthNumber.Time = 300; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 2, 4); monthNumber.Number = 51; monthNumber.Time = 853; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 3, 6); monthNumber.Number = 52; monthNumber.Time = 303; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 4, 5); monthNumber.Number = 53; monthNumber.Time = 806; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1173,7 +1180,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 10, 8); monthNumber.Number = 59; monthNumber.Time = 2016; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 11, 7); monthNumber.Number = 60; monthNumber.Time = 2311; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1551; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1998, 1, 6); monthNumber.Number = 2; monthNumber.Time = 300; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
         public void LoadChineseCalendarChartData1999_2007(List<ChineseCalendarChart> chineseCalendarChartList)
@@ -1182,6 +1188,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 1999; chineseCalendarChart.Year.Number = 16;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 1, 6); monthNumber.Number = 14; monthNumber.Time = 850; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1442; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 3, 6); monthNumber.Number = 4; monthNumber.Time = 852; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 4, 5); monthNumber.Number = 5; monthNumber.Time = 1355; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1193,11 +1200,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 10, 9); monthNumber.Number = 11; monthNumber.Time = 205; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 11, 8); monthNumber.Number = 12; monthNumber.Time = 501; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 12, 7); monthNumber.Number = 13; monthNumber.Time = 2114; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(1999, 1, 6); monthNumber.Number = 14; monthNumber.Time = 850; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2000; chineseCalendarChart.Year.Number = 17;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1438; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 2, 4); monthNumber.Number = 15; monthNumber.Time = 2032; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 3, 5); monthNumber.Number = 16; monthNumber.Time = 1442; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 4, 4); monthNumber.Number = 17; monthNumber.Time = 1945; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1209,11 +1216,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 10, 8); monthNumber.Number = 23; monthNumber.Time = 754; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1049; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 12, 7); monthNumber.Number = 25; monthNumber.Time = 329; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2000, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1438; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2001; chineseCalendarChart.Year.Number = 18;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 1, 5); monthNumber.Number = 38; monthNumber.Time = 2026; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 2, 4); monthNumber.Number = 27; monthNumber.Time = 220; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 3, 5); monthNumber.Number = 28; monthNumber.Time = 2030; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 4, 5); monthNumber.Number = 29; monthNumber.Time = 133; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1225,11 +1232,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1342; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 11, 7); monthNumber.Number = 36; monthNumber.Time = 1637; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 12, 7); monthNumber.Number = 37; monthNumber.Time = 917; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2001, 1, 5); monthNumber.Number = 38; monthNumber.Time = 2026; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2002; chineseCalendarChart.Year.Number = 19;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 1, 6); monthNumber.Number = 50; monthNumber.Time = 215; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 2, 4); monthNumber.Number = 39; monthNumber.Time = 808; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 3, 6); monthNumber.Number = 40; monthNumber.Time = 218; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 4, 5); monthNumber.Number = 41; monthNumber.Time = 721; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1241,11 +1248,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1931; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 11, 7); monthNumber.Number = 48; monthNumber.Time = 2226; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1506; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2002, 1, 6); monthNumber.Number = 50; monthNumber.Time = 215; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2003; chineseCalendarChart.Year.Number = 20;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 1, 6); monthNumber.Number = 2; monthNumber.Time = 804; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1357; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 3, 6); monthNumber.Number = 52; monthNumber.Time = 807; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 4, 5); monthNumber.Number = 53; monthNumber.Time = 1310; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1257,11 +1264,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 10, 9); monthNumber.Number = 59; monthNumber.Time = 120; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 11, 8); monthNumber.Number = 60; monthNumber.Time = 415; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 12, 7); monthNumber.Number = 1; monthNumber.Time = 2005; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2003, 1, 6); monthNumber.Number = 2; monthNumber.Time = 804; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2004; chineseCalendarChart.Year.Number = 21;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1352; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1946; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 3, 5); monthNumber.Number = 4; monthNumber.Time = 1356; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 4, 4); monthNumber.Number = 5; monthNumber.Time = 1859; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1273,11 +1280,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 10, 8); monthNumber.Number = 11; monthNumber.Time = 708; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 11, 7); monthNumber.Number = 12; monthNumber.Time = 1003; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 12, 7); monthNumber.Number = 13; monthNumber.Time = 243; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2004, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1352; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2005; chineseCalendarChart.Year.Number = 22;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2143; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 2, 4); monthNumber.Number = 15; monthNumber.Time = 134; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 3, 5); monthNumber.Number = 16; monthNumber.Time = 1945; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 4, 5); monthNumber.Number = 17; monthNumber.Time = 48; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1289,11 +1296,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 10, 8); monthNumber.Number = 23; monthNumber.Time = 2359; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1554; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 12, 7); monthNumber.Number = 25; monthNumber.Time = 834; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2005, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2143; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2006; chineseCalendarChart.Year.Number = 23;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 1, 6); monthNumber.Number = 38; monthNumber.Time = 132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 2, 4); monthNumber.Number = 27; monthNumber.Time = 725; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 3, 6); monthNumber.Number = 28; monthNumber.Time = 135; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 4, 5); monthNumber.Number = 29; monthNumber.Time = 638; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1305,11 +1312,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1948; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 11, 7); monthNumber.Number = 36; monthNumber.Time = 2143; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1423; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2006, 1, 6); monthNumber.Number = 38; monthNumber.Time = 132; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2007; chineseCalendarChart.Year.Number = 24;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 1, 6); monthNumber.Number = 50; monthNumber.Time = 721; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1314; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 3, 6); monthNumber.Number = 40; monthNumber.Time = 724; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 4, 5); monthNumber.Number = 41; monthNumber.Time = 1227; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1321,7 +1328,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 10, 9); monthNumber.Number = 47; monthNumber.Time = 37; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 11, 8); monthNumber.Number = 48; monthNumber.Time = 332; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 12, 7); monthNumber.Number = 49; monthNumber.Time = 2012; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2007, 1, 6); monthNumber.Number = 50; monthNumber.Time = 721; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
         public void LoadChineseCalendarChartData2008_2018(List<ChineseCalendarChart> chineseCalendarChartList)
@@ -1330,6 +1336,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2008; chineseCalendarChart.Year.Number = 25;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 1, 5); monthNumber.Number = 2; monthNumber.Time = 1310; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1903; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 3, 5); monthNumber.Number = 52; monthNumber.Time = 1313; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 4, 4); monthNumber.Number = 53; monthNumber.Time = 1816; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1341,11 +1348,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 10, 8); monthNumber.Number = 59; monthNumber.Time = 626; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 11, 7); monthNumber.Number = 60; monthNumber.Time = 921; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 12, 7); monthNumber.Number = 1; monthNumber.Time = 201; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2008, 1, 5); monthNumber.Number = 2; monthNumber.Time = 1310; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2009; chineseCalendarChart.Year.Number = 26;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1900; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 2, 4); monthNumber.Number = 3; monthNumber.Time = 52; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 3, 5); monthNumber.Number = 4; monthNumber.Time = 1902; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 4, 5); monthNumber.Number = 5; monthNumber.Time = 05; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1357,11 +1364,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1215; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 11, 7); monthNumber.Number = 12; monthNumber.Time = 1510; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 12, 7); monthNumber.Number = 13; monthNumber.Time = 705; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2009, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1900; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2010; chineseCalendarChart.Year.Number = 27;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 1, 6); monthNumber.Number = 26; monthNumber.Time = 50; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 2, 4); monthNumber.Number = 15; monthNumber.Time = 642; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 3, 6); monthNumber.Number = 16; monthNumber.Time = 52; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 4, 5); monthNumber.Number = 17; monthNumber.Time = 555; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1373,11 +1380,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1805; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 11, 7); monthNumber.Number = 24; monthNumber.Time = 2101; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1341; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2010, 1, 6); monthNumber.Number = 26; monthNumber.Time = 50; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2011; chineseCalendarChart.Year.Number = 28;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 1, 6); monthNumber.Number = 38; monthNumber.Time = 641; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1232; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 3, 6); monthNumber.Number = 28; monthNumber.Time = 643; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 4, 5); monthNumber.Number = 29; monthNumber.Time = 1146; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1389,11 +1396,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 10, 8); monthNumber.Number = 35; monthNumber.Time = 2357; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 11, 8); monthNumber.Number = 36; monthNumber.Time = 252; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1932; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2011, 1, 6); monthNumber.Number = 38; monthNumber.Time = 641; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2012; chineseCalendarChart.Year.Number = 29;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1316; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1840; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 3, 5); monthNumber.Number = 40; monthNumber.Time = 1228; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 4, 4); monthNumber.Number = 41; monthNumber.Time = 1716; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1405,11 +1412,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 10, 8); monthNumber.Number = 47; monthNumber.Time = 642; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 11, 7); monthNumber.Number = 48; monthNumber.Time = 956; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 12, 7); monthNumber.Number = 49; monthNumber.Time = 232; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2012, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1316; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2013; chineseCalendarChart.Year.Number = 30;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 1, 6); monthNumber.Number = 2; monthNumber.Time = 2007; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 2, 4); monthNumber.Number = 51; monthNumber.Time = 31; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 3, 5); monthNumber.Number = 52; monthNumber.Time = 1819; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 4, 4); monthNumber.Number = 53; monthNumber.Time = 1105; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1421,11 +1428,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 10, 8); monthNumber.Number = 59; monthNumber.Time = 1231; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 11, 7); monthNumber.Number = 60; monthNumber.Time = 1545; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 12, 7); monthNumber.Number = 1; monthNumber.Time = 821; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2013, 1, 6); monthNumber.Number = 2; monthNumber.Time = 2007; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2014; chineseCalendarChart.Year.Number = 31;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 1, 6); monthNumber.Number = 14; monthNumber.Time = 57; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 2, 4); monthNumber.Number = 3; monthNumber.Time = 621; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 3, 6); monthNumber.Number = 4; monthNumber.Time = 7; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 4, 5); monthNumber.Number = 5; monthNumber.Time = 454; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1437,11 +1444,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 10, 8); monthNumber.Number = 11; monthNumber.Time = 1820; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 11, 7); monthNumber.Number = 12; monthNumber.Time = 2136; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1411; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2014, 1, 6); monthNumber.Number = 14; monthNumber.Time = 57; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2015; chineseCalendarChart.Year.Number = 32;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 1, 6); monthNumber.Number = 26; monthNumber.Time = 647; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1209; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 3, 6); monthNumber.Number = 16; monthNumber.Time = 556; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 4, 5); monthNumber.Number = 17; monthNumber.Time = 1058; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1453,11 +1460,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 10, 9); monthNumber.Number = 23; monthNumber.Time = 9; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 11, 8); monthNumber.Number = 24; monthNumber.Time = 325; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 12, 7); monthNumber.Number = 25; monthNumber.Time = 2001; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2015, 1, 6); monthNumber.Number = 26; monthNumber.Time = 647; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2016; chineseCalendarChart.Year.Number = 33;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1236; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 2, 4); monthNumber.Number = 27; monthNumber.Time = 1800; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 3, 5); monthNumber.Number = 28; monthNumber.Time = 1146; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 4, 4); monthNumber.Number = 29; monthNumber.Time = 1632; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1469,11 +1476,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 10, 8); monthNumber.Number = 35; monthNumber.Time = 559; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 11, 7); monthNumber.Number = 36; monthNumber.Time = 914; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 12, 7); monthNumber.Number = 37; monthNumber.Time = 154; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2016, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1236; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2017; chineseCalendarChart.Year.Number = 34;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1826; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 2, 3); monthNumber.Number = 39; monthNumber.Time = 2349; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 3, 5); monthNumber.Number = 40; monthNumber.Time = 1736; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 4, 4); monthNumber.Number = 41; monthNumber.Time = 2220; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1485,11 +1492,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1147; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 11, 7); monthNumber.Number = 48; monthNumber.Time = 1503; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 12, 7); monthNumber.Number = 49; monthNumber.Time = 740; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2017, 1, 5); monthNumber.Number = 50; monthNumber.Time = 1826; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2018; chineseCalendarChart.Year.Number = 35;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 1, 6); monthNumber.Number = 2; monthNumber.Time = 16; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 2, 4); monthNumber.Number = 51; monthNumber.Time = 538; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 3, 5); monthNumber.Number = 52; monthNumber.Time = 2325; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 4, 5); monthNumber.Number = 53; monthNumber.Time = 420; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1501,7 +1508,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 10, 8); monthNumber.Number = 59; monthNumber.Time = 1736; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 11, 7); monthNumber.Number = 60; monthNumber.Time = 2054; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1330; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2018, 1, 6); monthNumber.Number = 2; monthNumber.Time = 16; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
 
@@ -1512,6 +1518,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2019; chineseCalendarChart.Year.Number = 36;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 1, 6); monthNumber.Number = 14; monthNumber.Time = 606; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1128; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 3, 6); monthNumber.Number = 4; monthNumber.Time = 514; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 4, 5); monthNumber.Number = 5; monthNumber.Time = 959; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1523,11 +1530,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 10, 8); monthNumber.Number = 11; monthNumber.Time = 2325; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 11, 8); monthNumber.Number = 12; monthNumber.Time = 242; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 12, 7); monthNumber.Number = 13; monthNumber.Time = 1920; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2019, 1, 6); monthNumber.Number = 14; monthNumber.Time = 606; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2020; chineseCalendarChart.Year.Number = 37;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1155; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 2, 4); monthNumber.Number = 15; monthNumber.Time = 1718; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 3, 5); monthNumber.Number = 16; monthNumber.Time = 1103; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 4, 4); monthNumber.Number = 17; monthNumber.Time = 1548; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1539,11 +1546,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 10, 8); monthNumber.Number = 23; monthNumber.Time = 515; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 11, 7); monthNumber.Number = 24; monthNumber.Time = 831; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 12, 7); monthNumber.Number = 25; monthNumber.Time = 109; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2020, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1155; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2021; chineseCalendarChart.Year.Number = 38;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1746; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 2, 3); monthNumber.Number = 27; monthNumber.Time = 2308; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 3, 5); monthNumber.Number = 28; monthNumber.Time = 1654; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 4, 4); monthNumber.Number = 29; monthNumber.Time = 2137; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1555,11 +1562,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1104; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 11, 7); monthNumber.Number = 36; monthNumber.Time = 1421; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 12, 7); monthNumber.Number = 37; monthNumber.Time = 700; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2021, 1, 5); monthNumber.Number = 38; monthNumber.Time = 1746; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2022; chineseCalendarChart.Year.Number = 39;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 1, 5); monthNumber.Number = 50; monthNumber.Time = 2335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 2, 4); monthNumber.Number = 39; monthNumber.Time = 458; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 3, 5); monthNumber.Number = 40; monthNumber.Time = 2242; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 4, 5); monthNumber.Number = 41; monthNumber.Time = 322; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1571,11 +1578,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 10, 8); monthNumber.Number = 47; monthNumber.Time = 1653; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 11, 7); monthNumber.Number = 48; monthNumber.Time = 2011; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1249; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2022, 1, 5); monthNumber.Number = 50; monthNumber.Time = 2335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2023; chineseCalendarChart.Year.Number = 40;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 1, 6); monthNumber.Number = 2; monthNumber.Time = 525; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1047; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 3, 6); monthNumber.Number = 52; monthNumber.Time = 431; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 4, 5); monthNumber.Number = 53; monthNumber.Time = 914; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1587,11 +1594,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 10, 8); monthNumber.Number = 59; monthNumber.Time = 2241; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 11, 8); monthNumber.Number = 60; monthNumber.Time = 200; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 12, 7); monthNumber.Number = 1; monthNumber.Time = 1838; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2023, 1, 6); monthNumber.Number = 2; monthNumber.Time = 525; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2024; chineseCalendarChart.Year.Number = 41;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1115; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 2, 4); monthNumber.Number = 3; monthNumber.Time = 1637; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 3, 5); monthNumber.Number = 4; monthNumber.Time = 1021; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 4, 4); monthNumber.Number = 5; monthNumber.Time = 1503; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1603,11 +1610,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 10, 8); monthNumber.Number = 11; monthNumber.Time = 431; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 11, 7); monthNumber.Number = 12; monthNumber.Time = 749; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 12, 7); monthNumber.Number = 13; monthNumber.Time = 29; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2024, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1115; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2025; chineseCalendarChart.Year.Number = 42;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1705; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 2, 3); monthNumber.Number = 15; monthNumber.Time = 2227; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 3, 5); monthNumber.Number = 16; monthNumber.Time = 1611; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 4, 4); monthNumber.Number = 17; monthNumber.Time = 2052; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1619,11 +1626,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1019; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1340; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 12, 7); monthNumber.Number = 25; monthNumber.Time = 618; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2025, 1, 5); monthNumber.Number = 26; monthNumber.Time = 1705; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2026; chineseCalendarChart.Year.Number = 43;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 1, 5); monthNumber.Number = 38; monthNumber.Time = 2255; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 2, 4); monthNumber.Number = 27; monthNumber.Time = 416; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 3, 5); monthNumber.Number = 28; monthNumber.Time = 2200; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 4, 5); monthNumber.Number = 29; monthNumber.Time = 241; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1635,11 +1642,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 10, 8); monthNumber.Number = 35; monthNumber.Time = 1608; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 11, 7); monthNumber.Number = 36; monthNumber.Time = 1929; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1208; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2026, 1, 5); monthNumber.Number = 38; monthNumber.Time = 2255; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2027; chineseCalendarChart.Year.Number = 44;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 1, 6); monthNumber.Number = 50; monthNumber.Time = 444; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 2, 4); monthNumber.Number = 39; monthNumber.Time = 1006; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 3, 6); monthNumber.Number = 40; monthNumber.Time = 349; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 4, 5); monthNumber.Number = 41; monthNumber.Time = 831; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1651,7 +1658,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 10, 8); monthNumber.Number = 47; monthNumber.Time = 2158; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 11, 8); monthNumber.Number = 48; monthNumber.Time = 118; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 12, 7); monthNumber.Number = 49; monthNumber.Time = 1758; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2027, 1, 6); monthNumber.Number = 50; monthNumber.Time = 444; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
 
@@ -1662,6 +1668,7 @@ namespace BaZiCalculator.Models
             MonthNumber monthNumber = new MonthNumber();
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2028; chineseCalendarChart.Year.Number = 45;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 1, 5); monthNumber.Number = 2; monthNumber.Time = 1034; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 2, 4); monthNumber.Number = 51; monthNumber.Time = 1556; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 3, 5); monthNumber.Number = 52; monthNumber.Time = 938; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 4, 4); monthNumber.Number = 53; monthNumber.Time = 1419; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1673,11 +1680,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 10, 8); monthNumber.Number = 59; monthNumber.Time = 346; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 11, 7); monthNumber.Number = 60; monthNumber.Time = 707; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 12, 6); monthNumber.Number = 1; monthNumber.Time = 2347; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2028, 1, 5); monthNumber.Number = 2; monthNumber.Time = 1034; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2029; chineseCalendarChart.Year.Number = 46;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1624; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 2, 3); monthNumber.Number = 3; monthNumber.Time = 2145; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 3, 5); monthNumber.Number = 4; monthNumber.Time = 1529; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 4, 4); monthNumber.Number = 5; monthNumber.Time = 2008; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1689,11 +1696,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 10, 8); monthNumber.Number = 11; monthNumber.Time = 935; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 11, 7); monthNumber.Number = 12; monthNumber.Time = 1257; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 12, 7); monthNumber.Number = 13; monthNumber.Time = 537; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2029, 1, 5); monthNumber.Number = 14; monthNumber.Time = 1624; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2030; chineseCalendarChart.Year.Number = 47;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2214; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 2, 4); monthNumber.Number = 15; monthNumber.Time = 335; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 3, 5); monthNumber.Number = 16; monthNumber.Time = 2118; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 4, 5); monthNumber.Number = 17; monthNumber.Time = 157; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1705,11 +1712,11 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 10, 8); monthNumber.Number = 23; monthNumber.Time = 1524; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 11, 7); monthNumber.Number = 24; monthNumber.Time = 1847; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 12, 7); monthNumber.Number = 25; monthNumber.Time = 1127; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2030, 1, 5); monthNumber.Number = 26; monthNumber.Time = 2214; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
 
             chineseCalendarChart = new ChineseCalendarChart();
             chineseCalendarChart.Year.Year = 2031; chineseCalendarChart.Year.Number = 48;
+            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 1, 6); monthNumber.Number = 38; monthNumber.Time = 403; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 2, 4); monthNumber.Number = 27; monthNumber.Time = 925; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 3, 6); monthNumber.Number = 28; monthNumber.Time = 306; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 4, 5); monthNumber.Number = 29; monthNumber.Time = 746; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
@@ -1721,7 +1728,6 @@ namespace BaZiCalculator.Models
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 10, 8); monthNumber.Number = 35; monthNumber.Time = 2113; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 11, 8); monthNumber.Number = 36; monthNumber.Time = 35; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 12, 7); monthNumber.Number = 37; monthNumber.Time = 1716; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
-            monthNumber = new MonthNumber(); monthNumber.Month = new DateTime(2031, 1, 6); monthNumber.Number = 38; monthNumber.Time = 403; chineseCalendarChart.MonthNumberChart.Add(monthNumber);
             chineseCalendarChartList.Add(chineseCalendarChart);
         }
 
@@ -2114,51 +2120,51 @@ namespace BaZiCalculator.Models
             LeapYearMonthBinomialChart leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
             List<LeapYearMonthBinomialChart> leapYearMonthBinomialChartList = new List<LeapYearMonthBinomialChart>();
        
-            leapYearMonthBinomialChart.Month = "Jan";
+            leapYearMonthBinomialChart.Month = 1;
             leapYearMonthBinomialChart.Number = 0;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "Feb";
+            leapYearMonthBinomialChart.Month = 2;
             leapYearMonthBinomialChart.Number = 31;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "March";
+            leapYearMonthBinomialChart.Month = 3;
             leapYearMonthBinomialChart.Number = 0;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "April";
+            leapYearMonthBinomialChart.Month = 4;
             leapYearMonthBinomialChart.Number = 31;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "May";
+            leapYearMonthBinomialChart.Month = 5;
             leapYearMonthBinomialChart.Number = 1;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "June";
+            leapYearMonthBinomialChart.Month = 6;
             leapYearMonthBinomialChart.Number = 32;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "July";
+            leapYearMonthBinomialChart.Month = 7;
             leapYearMonthBinomialChart.Number = 2;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "Aug";
+            leapYearMonthBinomialChart.Month = 8;
             leapYearMonthBinomialChart.Number = 33;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "Sept";
+            leapYearMonthBinomialChart.Month = 9;
             leapYearMonthBinomialChart.Number = 4;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "Oct";
+            leapYearMonthBinomialChart.Month = 10;
             leapYearMonthBinomialChart.Number = 34;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "Nov";
+            leapYearMonthBinomialChart.Month = 11;
             leapYearMonthBinomialChart.Number = 5;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
             leapYearMonthBinomialChart = new LeapYearMonthBinomialChart();
-            leapYearMonthBinomialChart.Month = "Dec";
+            leapYearMonthBinomialChart.Month = 12;
             leapYearMonthBinomialChart.Number = 35;
             leapYearMonthBinomialChartList.Add(leapYearMonthBinomialChart);
 

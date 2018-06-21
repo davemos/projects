@@ -90,7 +90,13 @@ namespace BaZiCalculator.Models
             FourPillarsResult.MonthBranch = stemsAndBranchesCycleOf60.Find((obj) => obj.Number == monthNum).Branch;
 
             //step 6
-            int dayBinomial = Step6(dayBinomialsChart.Find((obj) => obj.Year == BirthYear), monthBinomialChart.Find((obj) => obj.Month == BirthMonth));
+            DayBinomialsChart dbc = dayBinomialsChart.Find((obj) => obj.Year == BirthYear);
+            IMonthBinomialChart bc;
+            if (dbc.LeapYear)
+                bc = leapYearMonthBinomialChart.Find((obj) => obj.Month == BirthMonth);
+            else
+                bc = monthBinomialChart.Find((obj) => obj.Month == BirthMonth);
+            int dayBinomial = Step6(dbc, bc);
 
             //step 7
             FourPillarsResult.DayStem = stemsAndBranchesCycleOf60.Find((obj) => obj.Number == dayBinomial).Stem;
@@ -179,16 +185,21 @@ namespace BaZiCalculator.Models
 
         public int Step4(ChineseCalendarChart chart)
         {
-            int monthNum = chart.MonthNumberChart.Find((obj) => obj.Month.CompareTo(BirthDate) >= 0).Number;
+            int monthNum = chart.MonthNumberChart.FindLast((obj) => obj.Month.CompareTo(BirthDate) <= 0).Number;
             return monthNum;
         }
 
-        public int Step6(DayBinomialsChart dayChart, MonthBinomialChart monthChart)
+        public int Step6(DayBinomialsChart dayChart, IMonthBinomialChart monthChart)
         {
             int yearBinomial = dayChart.Day1Number;
+
             int monthBinomial = monthChart.Number;
             int dayBinomial = BirthDay;
 
+            if (dayChart.LeapYear)
+            {
+                
+            }
             int total = yearBinomial + monthBinomial + dayBinomial;
 
             if (total > 60) total -= 60;

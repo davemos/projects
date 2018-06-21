@@ -1,9 +1,9 @@
 ﻿using System;
 namespace BaZiCalculator.Models
 {
-    public class LeapYearMonthBinomialChart
+    public class LeapYearMonthBinomialChart : IMonthBinomialChart
     {
-        public string Month
+        public int Month
         {
             get;
             set;
