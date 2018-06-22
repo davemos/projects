@@ -31,6 +31,27 @@ namespace BaZiCalculator.Controllers
             homeViewModel.BirthMonth = baZiCalculator.BirthMonth;
             homeViewModel.BirthTime = baZiCalculator.BirthTime;
             homeViewModel.BirthYear = baZiCalculator.BirthYear;
+            string excess = ""; string deficient = "";
+            if (homeViewModel.ElementTotals.WoodPercent > 25) excess += "Wood";
+            if (homeViewModel.ElementTotals.FirePercent > 25) excess += (excess != "" ? " and Fire" : " Fire");
+            if (homeViewModel.ElementTotals.EarthPercent > 25) excess += (excess != "" ? " and Earth" : " Earth");
+            if (homeViewModel.ElementTotals.MetalPercent > 25) excess += (excess != "" ? " and Metal" : " Metal");
+            if (homeViewModel.ElementTotals.WaterPercent > 25) excess += (excess != "" ? " and Water" : " Water");
+            if (homeViewModel.ElementTotals.WoodPercent < 15) deficient += "Wood";
+            if (homeViewModel.ElementTotals.FirePercent < 15) deficient += (deficient != "" ? " and Fire" : " Fire");
+            if (homeViewModel.ElementTotals.EarthPercent < 15) deficient += (deficient != "" ? " and Earth" : " Earth");
+            if (homeViewModel.ElementTotals.MetalPercent < 15) deficient += (deficient != "" ? " and Metal" : " Metal");
+            if (homeViewModel.ElementTotals.WaterPercent < 15) deficient += (deficient != "" ? " and Water" : " Water");
+            homeViewModel.StatementOfExcessDeficient = "This Profile is ";
+            if (excess == "" && deficient == "") homeViewModel.StatementOfExcessDeficient += "Balanced.";
+            if (excess != "")
+                homeViewModel.StatementOfExcessDeficient += "Excess in " + excess;
+            if (deficient != "")
+            {
+                if (excess != "") homeViewModel.StatementOfExcessDeficient += " and ";
+                homeViewModel.StatementOfExcessDeficient += "Deficient in " + deficient;
+            }
+                
 
             return View(homeViewModel);
         }

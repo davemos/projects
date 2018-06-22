@@ -206,6 +206,7 @@ namespace BaZiCalculator.Models
             // Step 14
             FourPillarsResult.DayMasterLabel = Step14(FourPillarsResult.DayStem);
 
+            
             //step 16
             Step16(FourPillarsResult, yinYangMeridianChart);
             YinYangMeridianResult = yinYangMeridianChart;

@@ -1,64 +1,103 @@
 ﻿@model BaZiCalculator.ViewModels.HomeViewModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Ba Zi Calculator";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.FourPillarsResult.YearStem.ToString()</h2>
-<table border="1">
+<table class="table table-bordered">
     <tr>
-        <td>Calculator</td>
+        <th scope="row">Calculator</th>
+        <th>Birth Time</th>
+        <th>Birth Day</th>
+        <th>Birth Month</th>
+        <th>Birth Year</th>
     </tr>
     <tr>
+        <th scope="row"></th>
         <td>@Model.BirthTime</td>
         <td>@Model.BirthDay</td>
         <td>@Model.BirthMonth</td>
         <td>@Model.BirthYear</td>
     </tr>
+
     <tr>
-        <td>Results: This profile is @Model.FourPillarsResult.DayMasterLabel</td>
+        <th scope="row" colspan="5">Results: This profile is @Model.FourPillarsResult.DayMasterLabel</th>
     </tr>
     <tr>
-        <td>Total Yin: @Model.TotalYin</td>
-        <td>Total Yang: @Model.TotalYang</td>
+        <th scope="row"></th>
+        <th>Total Yin:</th>
+        <td>@Model.TotalYin</td>
+        <th>Total Yang:</th>
+        <td>@Model.TotalYang</td>
+    </tr>
+</table>
+<table class="table table-bordered">
+    <tr><th scope="row" colspan="5">5 Element Profile</th></tr>
+    <tr>
+        <td></td>
+        <th scope="row">Fire</th>
+        <td colspan="4">@Model.ElementTotals.FirePercent%</td>
     </tr>
     <tr>
-        <td>5 Element Profile</td>
+        <td></td>
+        <th scope="row">Earth</th>
+        <td colspan="4">@Model.ElementTotals.EarthPercent%</td>
     </tr>
-    <tr><td>Fire</td><td>@Model.ElementTotals.FirePercent%</td></tr>
-    <tr><td>Earth</td><td>@Model.ElementTotals.EarthPercent%</td></tr>
-    <tr><td>Metal</td><td>@Model.ElementTotals.MetalPercent%</td></tr>
-    <tr><td>Water</td><td>@Model.ElementTotals.WaterPercent%</td></tr>
-    <tr><td>Wood</td><td>@Model.ElementTotals.WoodPercent%</td></tr>
     <tr>
-        <td>Constitutional Meridian Analysis</td>
+        <td></td>
+        <th scope="row">Metal</th>
+        <td colspan="4">@Model.ElementTotals.MetalPercent%</td>
+    </tr>
+    <tr>
+        <td></td>
+        <th scope="row">Water</th>
+        <td colspan="4">@Model.ElementTotals.WaterPercent%</td>
+    </tr>
+    <tr>
+        <td></td>
+        <th scope="row">Wood</th>
+        <td colspan="4">@Model.ElementTotals.WoodPercent%</td>
+    </tr>
+    <tr>
+        <th scope="row" colspan="5">@Model.StatementOfExcessDeficient</th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th scope="row" colspan="3">Constitutional Meridian Analysis</th>
     </tr>
     @foreach (var yy in Model.YinYangMeridianResult)
     {
         <tr>
-            <td>@yy.Stem</td>
+            <th scope="row">@yy.Stem</th>
             <td>@yy.Meridian</td>
             <td>@yy.Count</td>
         </tr>
     }
-    <tr><td>Four Pillars Bazi</td></tr>
+    
+</table>
+<table class="table table-bordered">
+
+    <tr><th scope="row" colspan="5">Four Pillars Bazi</div></tr>
     <tr>
-        <td></td>
-        <td>HOUR</td>
-        <td>DAY</td>
-        <td>MONTH</td>
-        <td>YEAR</td>
+        <th></th>
+        <th>HOUR</th>
+        <th>DAY</th>
+        <th>MONTH</th>
+        <th>YEAR</th>
     </tr>
     <tr>
-        <td>STEMS</td>
-        <td>@Model.FourPillarsResult.HourStem</td>
-        <td>@Model.FourPillarsResult.DayStem</td>
-        <td>@Model.FourPillarsResult.MonthStem</td>
-        <td>@Model.FourPillarsResult.YearStem</td>
+        <th scope="row">STEMS</th>
+        <td>@Model.FourPillarsResult.HourStem @Model.FourPillarsResult.HourStemValue</td>
+        <td>@Model.FourPillarsResult.DayStem @Model.FourPillarsResult.DayStemValue</td>
+        <td>@Model.FourPillarsResult.MonthStem @Model.FourPillarsResult.MonthStemValue</td>
+        <td>@Model.FourPillarsResult.YearStem @Model.FourPillarsResult.YearStemValue</td>
     </tr>
     <tr>
-        <td>BRANCHES</td>
+        <th scope="row">BRANCHES</th>
         <td>@Model.FourPillarsResult.HourBranch</td>
         <td>@Model.FourPillarsResult.DayBranch</td>
         <td>@Model.FourPillarsResult.MonthBranch</td>
@@ -66,26 +105,25 @@
     </tr>
     <tr>
         <td></td>
-        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement</td>
-        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement</td>
-        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement</td>
-        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement</td>
+        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement @Model.FourPillarsResult.HourHiddenElements.HiddenElementValue</td>
+        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement @Model.FourPillarsResult.DayHiddenElements.HiddenElementValue</td>
+        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement @Model.FourPillarsResult.MonthHiddenElements.HiddenElementValue</td>
+        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement @Model.FourPillarsResult.YearHiddenElements.HiddenElementValue</td>
     </tr>
     <tr>
         <td></td>
-        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement2</td>
-        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement2</td>
-        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement2</td>
-        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement2</td>
+        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement2 @Model.FourPillarsResult.HourHiddenElements.HiddenElement2Value</td>
+        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement2 @Model.FourPillarsResult.DayHiddenElements.HiddenElement2Value</td>
+        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement2 @Model.FourPillarsResult.MonthHiddenElements.HiddenElement2Value</td>
+        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement2 @Model.FourPillarsResult.YearHiddenElements.HiddenElement2Value</td>
     </tr>
     <tr>
         <td></td>
-        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement3</td>
-        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement3</td>
-        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement3</td>
-        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement3</td>
+        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement3 @Model.FourPillarsResult.HourHiddenElements.HiddenElement3Value</td>
+        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement3 @Model.FourPillarsResult.DayHiddenElements.HiddenElement3Value</td>
+        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement3 @Model.FourPillarsResult.MonthHiddenElements.HiddenElement3Value</td>
+        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement3 @Model.FourPillarsResult.YearHiddenElements.HiddenElement3Value</td>
     </tr>
-
 </table>
 
 

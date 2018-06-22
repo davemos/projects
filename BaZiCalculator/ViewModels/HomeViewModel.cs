@@ -56,6 +56,7 @@ namespace BaZiCalculator.ViewModels
             get;
             set;
         }
+        public string StatementOfExcessDeficient { get; set; }
         public HomeViewModel()
         {
             
