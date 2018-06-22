@@ -76,14 +76,30 @@ namespace BaZiCalculator.Models
             List<YinYangMeridianChart> yinYangMeridianChart = dataLoad.LoadYinYangMeridianChartData();
 
             //step 2
-            int yearNum = chineseCalendarChart.Find((ChineseCalendarChart obj) => obj.Year.Year == BirthYear).Year.Number;
-
+            ChineseCalendarChart cal = chineseCalendarChart.Find((obj) => obj.Year.Year == BirthYear);
+            int yearNum = 0;
+            if (BirthDate < cal.MonthNumberChart[1].Month)
+            {
+                yearNum = chineseCalendarChart.Find((ChineseCalendarChart obj) => obj.Year.Year == BirthYear - 1).Year.Number;
+            }
+            else
+            {
+                yearNum = chineseCalendarChart.Find((ChineseCalendarChart obj) => obj.Year.Year == BirthYear).Year.Number;
+            }
             //step 3
             FourPillarsResult.YearStem = stemsAndBranchesCycleOf60.Find((obj) => obj.Number == yearNum).Stem;
             FourPillarsResult.YearBranch = stemsAndBranchesCycleOf60.Find((obj) => obj.Number == yearNum).Branch;
 
             //step 4
-            int monthNum = Step4(chineseCalendarChart.Find((obj) => obj.Year.Year == BirthYear));
+           
+            DateTime monthDay = BirthDate;
+            if (BirthDate < cal.MonthNumberChart[1].Month)
+            {
+                monthDay = monthDay.AddYears(-1);
+                cal = chineseCalendarChart.Find((obj) => obj.Year.Year == BirthYear - 1);
+
+            }
+            int monthNum = Step4(cal, monthDay);
 
             //step 5
             FourPillarsResult.MonthStem = stemsAndBranchesCycleOf60.Find((obj) => obj.Number == monthNum).Stem;
@@ -92,6 +108,7 @@ namespace BaZiCalculator.Models
             //step 6
             DayBinomialsChart dbc = dayBinomialsChart.Find((obj) => obj.Year == BirthYear);
             IMonthBinomialChart bc;
+
             if (dbc.LeapYear)
                 bc = leapYearMonthBinomialChart.Find((obj) => obj.Month == BirthMonth);
             else
@@ -109,6 +126,7 @@ namespace BaZiCalculator.Models
             if (BirthTime < 2300)
             {
                 hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
+
             }
             else
             {
@@ -193,9 +211,9 @@ namespace BaZiCalculator.Models
             YinYangMeridianResult = yinYangMeridianChart;
         }
 
-        public int Step4(ChineseCalendarChart chart)
+        public int Step4(ChineseCalendarChart chart, DateTime monthDay)
         {
-            int monthNum = chart.MonthNumberChart.FindLast((obj) => obj.Month.CompareTo(BirthDate) <= 0).Number;
+            int monthNum = chart.MonthNumberChart.FindLast((obj) => obj.Month.CompareTo(monthDay) <= 0).Number;
             return monthNum;
         }
 
