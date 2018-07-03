@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using BaZiCalculator.Models;
                     
 namespace BaZiCalculator.ViewModels
 {
     public class HomeViewModel
     {
+        [Required(ErrorMessage = "Birth Date is required.")][DataType(DataType.Date)]
         public DateTime BirthDate
         {
             get;
             set;
         }
+        [Required(ErrorMessage = "Birth Time is required.")]
+        [Range(1,2400)]
         public long BirthTime
         {
             get;

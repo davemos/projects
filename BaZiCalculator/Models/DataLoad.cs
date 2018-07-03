@@ -2557,45 +2557,51 @@ namespace BaZiCalculator.Models
             List<YinYangMeridianChart> yinYangMeridianChartList = new List<YinYangMeridianChart>();
             YinYangMeridianChart yinYangMeridianChart = new YinYangMeridianChart();
 
+
             yinYangMeridianChart.Stem = Stems.YinWood;
             yinYangMeridianChart.Meridian = "Liver";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YinFire;
-            yinYangMeridianChart.Meridian = "Heart and Pericardium";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YinEarth;
-            yinYangMeridianChart.Meridian = "Spleen";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YinMetal;
-            yinYangMeridianChart.Meridian = "Lung";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YinWater;
-            yinYangMeridianChart.Meridian = "Kidney";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YangEarth;
-            yinYangMeridianChart.Meridian = "Stomach";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YangFire;
-            yinYangMeridianChart.Meridian = "Small Intestine and Triple Warmer";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YangMetal;
-            yinYangMeridianChart.Meridian = "Large Intestine";
-            yinYangMeridianChartList.Add(yinYangMeridianChart);
-            yinYangMeridianChart = new YinYangMeridianChart();
-            yinYangMeridianChart.Stem = Stems.YangWater;
-            yinYangMeridianChart.Meridian = "Urinary Bladder";
             yinYangMeridianChartList.Add(yinYangMeridianChart);
             yinYangMeridianChart = new YinYangMeridianChart();
             yinYangMeridianChart.Stem = Stems.YangWood;
             yinYangMeridianChart.Meridian = "Gall Bladder";
             yinYangMeridianChartList.Add(yinYangMeridianChart);
+
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YinFire;
+            yinYangMeridianChart.Meridian = "Heart and Pericardium";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YangFire;
+            yinYangMeridianChart.Meridian = "Small Intestine and Triple Warmer";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YinEarth;
+            yinYangMeridianChart.Meridian = "Spleen";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YangEarth;
+            yinYangMeridianChart.Meridian = "Stomach";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YinMetal;
+            yinYangMeridianChart.Meridian = "Lung";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YangMetal;
+            yinYangMeridianChart.Meridian = "Large Intestine";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YinWater;
+            yinYangMeridianChart.Meridian = "Kidney";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+            yinYangMeridianChart = new YinYangMeridianChart();
+            yinYangMeridianChart.Stem = Stems.YangWater;
+            yinYangMeridianChart.Meridian = "Urinary Bladder";
+            yinYangMeridianChartList.Add(yinYangMeridianChart);
+           
 
             return yinYangMeridianChartList;
         }

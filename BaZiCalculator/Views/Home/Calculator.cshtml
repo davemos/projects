@@ -4,126 +4,175 @@
     ViewBag.Title = "Ba Zi Calculator";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<table class="table table-bordered">
-    <tr>
-        <th scope="row">Calculator</th>
-        <th>Birth Time</th>
-        <th>Birth Day</th>
-        <th>Birth Month</th>
-        <th>Birth Year</th>
-    </tr>
-    <tr>
-        <th scope="row"></th>
-        <td>@Model.BirthTime</td>
-        <td>@Model.BirthDay</td>
-        <td>@Model.BirthMonth</td>
-        <td>@Model.BirthYear</td>
-    </tr>
-
-    <tr>
-        <th scope="row" colspan="5">Results: This profile is @Model.FourPillarsResult.DayMasterLabel</th>
-    </tr>
-    <tr>
-        <th scope="row"></th>
-        <th>Total Yin:</th>
-        <td>@Model.TotalYin</td>
-        <th>Total Yang:</th>
-        <td>@Model.TotalYang</td>
-    </tr>
-</table>
-<table class="table table-bordered">
-    <tr><th scope="row" colspan="5">5 Element Profile</th></tr>
-    <tr>
-        <td></td>
-        <th scope="row">Fire</th>
-        <td colspan="4">@Model.ElementTotals.FirePercent%</td>
-    </tr>
-    <tr>
-        <td></td>
-        <th scope="row">Earth</th>
-        <td colspan="4">@Model.ElementTotals.EarthPercent%</td>
-    </tr>
-    <tr>
-        <td></td>
-        <th scope="row">Metal</th>
-        <td colspan="4">@Model.ElementTotals.MetalPercent%</td>
-    </tr>
-    <tr>
-        <td></td>
-        <th scope="row">Water</th>
-        <td colspan="4">@Model.ElementTotals.WaterPercent%</td>
-    </tr>
-    <tr>
-        <td></td>
-        <th scope="row">Wood</th>
-        <td colspan="4">@Model.ElementTotals.WoodPercent%</td>
-    </tr>
-    <tr>
-        <th scope="row" colspan="5">@Model.StatementOfExcessDeficient</th>
-    </tr>
-</table>
-
-
-<table class="table table-bordered">
-    <tr>
-        <th scope="row" colspan="3">Constitutional Meridian Analysis</th>
-    </tr>
-    @foreach (var yy in Model.YinYangMeridianResult)
-    {
+@using (Html.BeginForm("Index", "Home"))
+{
+    <table>
         <tr>
-            <th scope="row">@yy.Stem</th>
-            <td>@yy.Meridian</td>
-            <td>@yy.Count</td>
+            <th scope="row">Calculator</th>
         </tr>
+        <tr><td><button type="submit">New Calculation</button></td><td><button type="button" onclick="print()">Print</button></td></tr>
+
+    </table>
+}
+    <br />
+    <table class="table table-bordered">
+
+        <tr>
+            <th>Birth Time</th>
+            <th>Birth Day</th>
+            <th>Birth Month</th>
+            <th>Birth Year</th>
+        </tr>
+        <tr>
+            <td>@Model.BirthTime</td>
+            <td>@Model.BirthDay</td>
+            <td>@Model.BirthMonth</td>
+            <td>@Model.BirthYear</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th scope="row" colspan="5">@Model.StatementOfExcessDeficient</th>
+        </tr>
+        <tr>
+            <th scope="row" colspan="5">The Day Master is @Model.FourPillarsResult.DayMasterLabel</th>
+        </tr>
+    </table>
+    <br />
+
+    <table>
+        <tr><th scope="row" colspan="5">5 Element Profile</th></tr>
+        <tr>
+            <td width="400" height="400">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th scope="row" colspan="3">Constitutional Meridian Analysis</th>
+        </tr>
+        @foreach (var yy in Model.YinYangMeridianResult)
+        {
+            <tr>
+                <th scope="row">@yy.Stem</th>
+                <td>@yy.Meridian</td>
+                <td>@yy.Count</td>
+            </tr>
+        }
+
+    </table>
+    <table>
+        <tr>
+            <th scope="row"></th>
+            <th width="100" align="right">Total Yin:</th>
+            <td width="100" align="left">@Model.TotalYin</td>
+
+            <th width="100" align="right">Total Yang:</th>
+            <td width="100" align="left">@Model.TotalYang</td>
+        </tr>
+    </table>
+    <br />
+    <table class="table table-bordered">
+
+        <tr><th scope="row" colspan="5">Four Pillars Bazi</div></tr>
+        <tr>
+            <th></th>
+            <th>HOUR</th>
+            <th>DAY</th>
+            <th>MONTH</th>
+            <th>YEAR</th>
+        </tr>
+        <tr>
+            <th scope="row">STEMS</th>
+            <td>@Model.FourPillarsResult.HourStem @Model.FourPillarsResult.HourStemValue</td>
+            <td>@Model.FourPillarsResult.DayStem @Model.FourPillarsResult.DayStemValue</td>
+            <td>@Model.FourPillarsResult.MonthStem @Model.FourPillarsResult.MonthStemValue</td>
+            <td>@Model.FourPillarsResult.YearStem @Model.FourPillarsResult.YearStemValue</td>
+        </tr>
+        <tr>
+            <th scope="row">BRANCHES</th>
+            <td>@Model.FourPillarsResult.HourBranch</td>
+            <td>@Model.FourPillarsResult.DayBranch</td>
+            <td>@Model.FourPillarsResult.MonthBranch</td>
+            <td>@Model.FourPillarsResult.YearBranch</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@if (Model.FourPillarsResult.HourHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.HourHiddenElements.HiddenElement @Model.FourPillarsResult.HourHiddenElements.HiddenElementValue</text>}</td>
+            <td>@if (Model.FourPillarsResult.DayHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.DayHiddenElements.HiddenElement @Model.FourPillarsResult.DayHiddenElements.HiddenElementValue</text>}</td>
+            <td>@if (Model.FourPillarsResult.MonthHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement @Model.FourPillarsResult.MonthHiddenElements.HiddenElementValue</text>}</td>
+            <td>@if (Model.FourPillarsResult.YearHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.YearHiddenElements.HiddenElement @Model.FourPillarsResult.YearHiddenElements.HiddenElementValue</text>}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@if (Model.FourPillarsResult.HourHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.HourHiddenElements.HiddenElement2 @Model.FourPillarsResult.HourHiddenElements.HiddenElement2Value</text>}</td>
+            <td>@if (Model.FourPillarsResult.DayHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.DayHiddenElements.HiddenElement2 @Model.FourPillarsResult.DayHiddenElements.HiddenElement2Value</text>}</td>
+            <td>@if (Model.FourPillarsResult.MonthHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement2 @Model.FourPillarsResult.MonthHiddenElements.HiddenElement2Value</text>}</td>
+            <td>@if (Model.FourPillarsResult.YearHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.YearHiddenElements.HiddenElement2 @Model.FourPillarsResult.YearHiddenElements.HiddenElement2Value</text>}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@if (Model.FourPillarsResult.HourHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.HourHiddenElements.HiddenElement3 @Model.FourPillarsResult.HourHiddenElements.HiddenElement3Value</text>}</td>
+            <td>@if (Model.FourPillarsResult.DayHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.DayHiddenElements.HiddenElement3 @Model.FourPillarsResult.DayHiddenElements.HiddenElement3Value</text>}</td>
+            <td>@if (Model.FourPillarsResult.MonthHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement3 @Model.FourPillarsResult.MonthHiddenElements.HiddenElement3Value</text>}</td>
+            <td>@if (Model.FourPillarsResult.YearHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
+            {<text>@Model.FourPillarsResult.YearHiddenElements.HiddenElement3 @Model.FourPillarsResult.YearHiddenElements.HiddenElement3Value</text>}</td>
+        </tr>
+    </table>
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var colors = new Array();
+        var dataPoints = new Array();
+        var legend = new Array();
+        if (@Model.ElementTotals.WoodPercent != 0) {
+            colors.push('green'); dataPoints.push(@Model.ElementTotals.WoodPercent);legend.push("Wood @Model.ElementTotals.WoodPercent%");
+        }
+        if (@Model.ElementTotals.FirePercent != 0) {
+            colors.push('red'); dataPoints.push(@Model.ElementTotals.FirePercent);legend.push("Fire @Model.ElementTotals.FirePercent%");
+        }
+        if (@Model.ElementTotals.EarthPercent != 0) {
+            colors.push('yellow'); dataPoints.push(@Model.ElementTotals.EarthPercent);legend.push("Earth @Model.ElementTotals.EarthPercent%");
+        }
+        if (@Model.ElementTotals.MetalPercent != 0) {
+            colors.push('silver'); dataPoints.push(@Model.ElementTotals.MetalPercent); legend.push("Metal @Model.ElementTotals.MetalPercent%");
+        }
+        if (@Model.ElementTotals.WaterPercent != 0) { colors.push('blue'); dataPoints.push(@Model.ElementTotals.WaterPercent);legend.push("Water @Model.ElementTotals.WaterPercent%"); }
+
+        
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["Wood @Model.ElementTotals.WoodPercent%", "Fire @Model.ElementTotals.FirePercent%", "Earth @Model.ElementTotals.EarthPercent%", "Metal @Model.ElementTotals.MetalPercent%", "Water @Model.ElementTotals.WaterPercent%"],
+        datasets: [{
+            label: '5 Element Profile',
+            data: dataPoints,
+            backgroundColor: colors,
+            borderColor:  colors,
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        rotation:-135,
+        legend: {position: 'right'}
+
     }
-    
-</table>
-<table class="table table-bordered">
-
-    <tr><th scope="row" colspan="5">Four Pillars Bazi</div></tr>
-    <tr>
-        <th></th>
-        <th>HOUR</th>
-        <th>DAY</th>
-        <th>MONTH</th>
-        <th>YEAR</th>
-    </tr>
-    <tr>
-        <th scope="row">STEMS</th>
-        <td>@Model.FourPillarsResult.HourStem @Model.FourPillarsResult.HourStemValue</td>
-        <td>@Model.FourPillarsResult.DayStem @Model.FourPillarsResult.DayStemValue</td>
-        <td>@Model.FourPillarsResult.MonthStem @Model.FourPillarsResult.MonthStemValue</td>
-        <td>@Model.FourPillarsResult.YearStem @Model.FourPillarsResult.YearStemValue</td>
-    </tr>
-    <tr>
-        <th scope="row">BRANCHES</th>
-        <td>@Model.FourPillarsResult.HourBranch</td>
-        <td>@Model.FourPillarsResult.DayBranch</td>
-        <td>@Model.FourPillarsResult.MonthBranch</td>
-        <td>@Model.FourPillarsResult.YearBranch</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement @Model.FourPillarsResult.HourHiddenElements.HiddenElementValue</td>
-        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement @Model.FourPillarsResult.DayHiddenElements.HiddenElementValue</td>
-        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement @Model.FourPillarsResult.MonthHiddenElements.HiddenElementValue</td>
-        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement @Model.FourPillarsResult.YearHiddenElements.HiddenElementValue</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement2 @Model.FourPillarsResult.HourHiddenElements.HiddenElement2Value</td>
-        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement2 @Model.FourPillarsResult.DayHiddenElements.HiddenElement2Value</td>
-        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement2 @Model.FourPillarsResult.MonthHiddenElements.HiddenElement2Value</td>
-        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement2 @Model.FourPillarsResult.YearHiddenElements.HiddenElement2Value</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>@Model.FourPillarsResult.HourHiddenElements.HiddenElement3 @Model.FourPillarsResult.HourHiddenElements.HiddenElement3Value</td>
-        <td>@Model.FourPillarsResult.DayHiddenElements.HiddenElement3 @Model.FourPillarsResult.DayHiddenElements.HiddenElement3Value</td>
-        <td>@Model.FourPillarsResult.MonthHiddenElements.HiddenElement3 @Model.FourPillarsResult.MonthHiddenElements.HiddenElement3Value</td>
-        <td>@Model.FourPillarsResult.YearHiddenElements.HiddenElement3 @Model.FourPillarsResult.YearHiddenElements.HiddenElement3Value</td>
-    </tr>
-</table>
-
+});
+    </script>
 

@@ -190,18 +190,22 @@ namespace BaZiCalculator.Models
             //step 12
             TwelveStageGrowthCycleChart twelveStage = twelveStageGrowthCycleChart.Find((obj) => obj.Wood.Animal == FourPillarsResult.MonthBranch);
             ElementTotals.WoodTotal = ElementTotals.WoodTotal * twelveStage.Wood.Percent / 100;
+            twelveStage = twelveStageGrowthCycleChart.Find((obj) => obj.Fire.Animal == FourPillarsResult.MonthBranch);
             ElementTotals.FireTotal = ElementTotals.FireTotal * twelveStage.Fire.Percent / 100;
+            twelveStage = twelveStageGrowthCycleChart.Find((obj) => obj.Earth.Animal == FourPillarsResult.MonthBranch);
             ElementTotals.EarthTotal = ElementTotals.EarthTotal * twelveStage.Earth.Percent / 100;
+            twelveStage = twelveStageGrowthCycleChart.Find((obj) => obj.Metal.Animal == FourPillarsResult.MonthBranch);
             ElementTotals.MetalTotal = ElementTotals.MetalTotal * twelveStage.Metal.Percent / 100;
+            twelveStage = twelveStageGrowthCycleChart.Find((obj) => obj.Water.Animal == FourPillarsResult.MonthBranch);
             ElementTotals.WaterTotal = ElementTotals.WaterTotal * twelveStage.Water.Percent / 100;
 
             //step 13
             double elementTotals = ElementTotals.WoodTotal + ElementTotals.FireTotal + ElementTotals.EarthTotal + ElementTotals.MetalTotal + ElementTotals.WaterTotal;
-            ElementTotals.WoodPercent = (int)(ElementTotals.WoodTotal / elementTotals * 100);
-            ElementTotals.FirePercent = (int)(ElementTotals.FireTotal / elementTotals * 100);
-            ElementTotals.EarthPercent = (int)(ElementTotals.EarthTotal / elementTotals * 100);
-            ElementTotals.MetalPercent = (int)(ElementTotals.MetalTotal / elementTotals * 100);
-            ElementTotals.WaterPercent = (int)(ElementTotals.WaterTotal / elementTotals * 100);
+            ElementTotals.WoodPercent = (int)Math.Round(ElementTotals.WoodTotal / elementTotals * 100);
+            ElementTotals.FirePercent = (int)Math.Round(ElementTotals.FireTotal / elementTotals * 100);
+            ElementTotals.EarthPercent = (int)Math.Round(ElementTotals.EarthTotal / elementTotals * 100);
+            ElementTotals.MetalPercent = (int)Math.Round(ElementTotals.MetalTotal / elementTotals * 100);
+            ElementTotals.WaterPercent = (int)Math.Round(ElementTotals.WaterTotal / elementTotals * 100);
 
             // Step 14
             FourPillarsResult.DayMasterLabel = Step14(FourPillarsResult.DayStem);
