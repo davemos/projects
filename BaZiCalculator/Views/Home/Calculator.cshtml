@@ -140,19 +140,17 @@
         var colors = new Array();
         var dataPoints = new Array();
         var legend = new Array();
-        if (@Model.ElementTotals.WoodPercent != 0) {
-            colors.push('green'); dataPoints.push(@Model.ElementTotals.WoodPercent);legend.push("Wood @Model.ElementTotals.WoodPercent%");
-        }
-        if (@Model.ElementTotals.FirePercent != 0) {
-            colors.push('red'); dataPoints.push(@Model.ElementTotals.FirePercent);legend.push("Fire @Model.ElementTotals.FirePercent%");
-        }
-        if (@Model.ElementTotals.EarthPercent != 0) {
-            colors.push('yellow'); dataPoints.push(@Model.ElementTotals.EarthPercent);legend.push("Earth @Model.ElementTotals.EarthPercent%");
-        }
-        if (@Model.ElementTotals.MetalPercent != 0) {
-            colors.push('silver'); dataPoints.push(@Model.ElementTotals.MetalPercent); legend.push("Metal @Model.ElementTotals.MetalPercent%");
-        }
-        if (@Model.ElementTotals.WaterPercent != 0) { colors.push('blue'); dataPoints.push(@Model.ElementTotals.WaterPercent);legend.push("Water @Model.ElementTotals.WaterPercent%"); }
+        dataPoints.push(@Model.ElementTotals.WoodPercent);
+        dataPoints.push(@Model.ElementTotals.FirePercent);
+        dataPoints.push(@Model.ElementTotals.EarthPercent);
+        dataPoints.push(@Model.ElementTotals.MetalPercent);
+        dataPoints.push(@Model.ElementTotals.WaterPercent);
+
+        colors.push('green'); legend.push("Wood @Model.ElementTotals.WoodPercent%");
+        colors.push('red'); legend.push("Fire @Model.ElementTotals.FirePercent%");
+        colors.push('yellow'); legend.push("Earth @Model.ElementTotals.EarthPercent%");
+        colors.push('silver');  legend.push("Metal @Model.ElementTotals.MetalPercent%");
+        colors.push('blue'); legend.push("Water @Model.ElementTotals.WaterPercent%");
 
         
 var myChart = new Chart(ctx, {
