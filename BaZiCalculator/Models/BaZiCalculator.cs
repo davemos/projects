@@ -229,14 +229,12 @@ namespace BaZiCalculator.Models
             int monthBinomial = monthChart.Number;
             int dayBinomial = BirthDay;
 
-            if (dayChart.LeapYear)
-            {
-
-            }
             int total = yearBinomial + monthBinomial + dayBinomial;
 
-            if (total > 60) total -= 60;
-
+            while (total > 60)
+            {
+                total -= 60;
+            }
             return total;
         }
 
