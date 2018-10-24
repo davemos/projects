@@ -95,7 +95,7 @@ namespace BaZiCalculator.Models
             DateTime monthDay = BirthDate;
             if (BirthDate < cal.MonthNumberChart[1].Month)
             {
-                monthDay = monthDay.AddYears(-1);
+                //monthDay = monthDay.AddYears(-1);
                 cal = chineseCalendarChart.Find((obj) => obj.Year.Year == BirthYear - 1);
 
             }
@@ -125,7 +125,7 @@ namespace BaZiCalculator.Models
 
             if (BirthTime < 2300)
             {
-                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
+                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart >= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
 
             }
             else
