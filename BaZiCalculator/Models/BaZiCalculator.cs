@@ -123,14 +123,14 @@ namespace BaZiCalculator.Models
             HourStemAndBranchChart hsbc = Step8(hourStemAndBranchChart, FourPillarsResult.DayStem);
             HourStem hs = new HourStem();
 
-            if (BirthTime < 2300)
+            if (BirthTime < 2300 && BirthTime >= 100)
             {
-                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart >= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
+                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
 
             }
             else
             {
-                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime);
+                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart >= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
             }
             FourPillarsResult.HourStem = hs.Stem; // hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime).Stem;
             FourPillarsResult.HourBranch = hs.Animal; // hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime).Animal;
