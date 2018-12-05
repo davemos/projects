@@ -130,7 +130,14 @@ namespace BaZiCalculator.Models
             }
             else
             {
-                hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart >= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime);
+                if (BirthTime >= 2300)
+                {
+                    hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart >= 2300 && obj.TimeOfBirth.TimeEnd < 100);
+                }
+                else
+                {
+                    hs = hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart >= 2300 && BirthTime <= obj.TimeOfBirth.TimeEnd);
+                }
             }
             FourPillarsResult.HourStem = hs.Stem; // hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime).Stem;
             FourPillarsResult.HourBranch = hs.Animal; // hsbc.HourStems.Find((obj) => obj.TimeOfBirth.TimeStart <= BirthTime && obj.TimeOfBirth.TimeEnd >= BirthTime).Animal;
