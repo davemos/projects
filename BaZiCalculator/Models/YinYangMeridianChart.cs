@@ -18,6 +18,8 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
+
+        public int StemCount { get; set; }
         public YinYangMeridianChart()
         {
         }

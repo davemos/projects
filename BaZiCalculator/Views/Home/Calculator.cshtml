@@ -54,15 +54,18 @@
     <br />
     <table class="table table-bordered">
         <tr>
-            <th scope="row" colspan="3">Constitutional Meridian Analysis</th>
+            <th scope="row" colspan="2">Constitutional Meridian Analysis</th>
+            <th scope="row" colspan="1">Numbers</th>
+            <th scope="row" colspan="1">Total Values</th>
         </tr>
         @foreach (var yy in Model.YinYangMeridianResult)
         {
-            <tr>
-                <th scope="row">@yy.Stem</th>
-                <td>@yy.Meridian</td>
-                <td>@yy.Count</td>
-            </tr>
+        <tr>
+            <th scope="row">@yy.Stem</th>
+            <td>@yy.Meridian</td>
+            <td>@yy.Count</td>
+            <td>@yy.StemCount</td>
+        </tr>
         }
 
     </table>
