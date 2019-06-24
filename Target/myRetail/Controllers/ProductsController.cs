@@ -17,16 +17,18 @@ namespace myRetail.Controllers
         // GET: api/Products/5
         public ProductItem Get(string id)
         {
-
+            ProductItemPricing itemPrice = new ProductItemPricing();
+            ProductItem item = new ProductItem();
             RedSkyApi redSkyApi = new RedSkyApi();
             string name = redSkyApi.GetProductName(id);
-            ProductItemPricing itemPrice = _Context.GetProductPrice(id);
-            ProductItem item = new ProductItem
+            if (!string.IsNullOrEmpty(name))
             {
-                id = UInt64.Parse(id),
-                name = name,
-                current_price = itemPrice.current_price
-            };
+                itemPrice = _Context.GetProductPrice(id);
+                item.id = UInt64.Parse(id);
+                item.name = name;
+                item.current_price = itemPrice.current_price;
+            }
+           
             return item;
         }
 

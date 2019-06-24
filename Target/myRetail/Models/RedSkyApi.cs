@@ -1,5 +1,7 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using myRetail.Properties;
+using Microsoft.Ajax.Utilities;
 using Newtonsoft.Json.Linq;
 
 namespace myRetail.Models
@@ -20,12 +22,20 @@ namespace myRetail.Models
         {
             WebClient wc = new WebClient();
             string name = "";
+            try
+            {
+                JObject prodInfo = JObject.Parse(wc.DownloadString(Settings.Default.RedSkyApiUrl + prodId + "?excludes=" + Settings.Default.RedSkyProductInfoExclude));
 
-            JObject prodInfo = JObject.Parse(wc.DownloadString(Settings.Default.RedSkyApiUrl + prodId + "?excludes=" + Settings.Default.RedSkyProductInfoExclude));
+                name = prodInfo["product"]["item"]["product_description"]["title"].ToString();
+                return name;
+            }
+            catch (Exception ex)
+            {
 
-            name = prodInfo["product"]["item"]["product_description"]["title"].ToString();
-            return name;
-
+                return "";
+            }
+            
+           
 
         }
 
