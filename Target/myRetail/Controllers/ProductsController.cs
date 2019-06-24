@@ -6,7 +6,10 @@ using System.Net.Http;
 using System.Web.Http;
 using myRetail.Models;
 using myRetail.Properties;
+using Microsoft.Ajax.Utilities;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 
 namespace myRetail.Controllers
 {
@@ -15,9 +18,9 @@ namespace myRetail.Controllers
         public ProductContext _Context = new ProductContext();
 
         // GET: api/Products
-        public IEnumerable<string> Get()
+        public IHttpActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return BadRequest("Not Implemented");
         }
 
         // GET: api/Products/5
@@ -37,18 +40,29 @@ namespace myRetail.Controllers
         }
 
         // POST: api/Products
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]string value)
         {
+            return BadRequest("Not Implemented");
         }
 
         // PUT: api/Products/5
-        public void Put(int id, [FromBody]string value)
+        public IHttpActionResult Put(int id, [FromBody]ProductItem value)
         {
+            ProductUpdateResponse resp = _Context.UpdateProductPrice(value);
+            if (resp.Status == "Success")
+            {
+                return Ok(resp);
+            }
+            else
+            {
+                return BadRequest(resp.Message);
+            }
         }
 
         // DELETE: api/Products/5
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
+            return BadRequest("Not Implemented");
         }
     }
 }

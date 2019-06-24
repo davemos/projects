@@ -21,5 +21,18 @@ namespace myRetail.Models
             var items = collection.Find(filter).ToList();
             return items[0];
         }
+
+        public ProductUpdateResponse UpdateProductPrice(ProductItem itemPrice)
+        {
+            var filter = Builders<ProductItem>.Filter.Eq(Settings.Default.ProductIdFieldName, itemPrice.id);
+            var collection = Database.GetCollection<ProductItem>(Settings.Default.ProductPricingCollectionName);
+            var update = Builders<ProductItem>.Update.Set("current_price", itemPrice.current_price);
+            var result = collection.UpdateOne(filter, update);
+            ProductUpdateResponse resp  = new ProductUpdateResponse();
+            resp.prod_id = itemPrice.id;
+            resp.Status = result.ModifiedCount == 1 ? "Success" : "Failure";
+            resp.Message = result.ModifiedCount == 1 ? "Updated Product Price" : "Failed to Update Product Price";
+            return resp;
+        }
     }
 }
