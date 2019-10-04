@@ -1,0 +1,36 @@
+The hosted url to test this api is: http://myretail.somee.com
+
+To test a GET:
+http://myretail.somee.com/products/{prduct id}
+example: http://myretail.somee.com/products/13860428
+
+returns JSON data: {"id":13860428,"name":"The Big Lebowski (Blu-ray)","current_price":{"value":8.99,"currency_code":"USD"}}
+
+To test a PUT(to update price):
+url: http://myretail.somee.com/products/13860428
+body (application/json) example: {"id":13860428,"name":"The Big Lebowski (Blu-ray)","current_price":{"value":8.99,"currency_code":"USD"}}
+
+backend:
+connects to http://redsky.target.com/v2/pdp/tcin/ to retrieve the product name.
+uses mongodb atlas as the nosql pricing database
+
+Configuration can be adjusted via the web config:
+<applicationSettings>
+    <myRetail.Properties.Settings>
+      <setting name="ProductPricingDatabaseName" serializeAs="String">
+        <value>Target</value>
+      </setting>
+      <setting name="ProductPricingCollectionName" serializeAs="String">
+        <value>ProductPricing</value>
+      </setting>
+      <setting name="ProductIdFieldName" serializeAs="String">
+        <value>prod_id</value>
+      </setting>
+      <setting name="RedSkyApiUrl" serializeAs="String">
+        <value>https://redsky.target.com/v2/pdp/tcin/</value>
+      </setting>
+      <setting name="RedSkyProductInfoExclude" serializeAs="String">
+        <value>taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics,deep_red_labels,available_to_promise_network</value>
+      </setting>
+    </myRetail.Properties.Settings>
+  </applicationSettings>
