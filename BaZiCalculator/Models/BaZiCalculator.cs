@@ -55,6 +55,16 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
+        public int TotalYinValue
+        {
+            get;
+            set;
+        }
+        public int TotalYangValue
+        {
+            get;
+            set;
+        }
         public BaZiCalculator(DateTime birthDate, long birthTime)
         {
             FourPillarsResult = new FourPillarsTable();
@@ -330,13 +340,16 @@ namespace BaZiCalculator.Models
         public void Step16(FourPillarsTable chart, List<YinYangMeridianChart> yyChart)
         {
             int total = 0;
+            int totalValue = 0;
             YinYangMeridianChart hiddenElement;
             hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearStem);
             if (hiddenElement != null)
             {
                 hiddenElement.Count += 1;
                 hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem);
-                total = chart.YearStem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++;
+                total = chart.YearStem.ToString().StartsWith("Yang") ? this.TotalYang++: this.TotalYin++;
+                totalValue = chart.YearStem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.YearStemValue : this.TotalYinValue += chart.YearStemValue;
+
             }
 
             hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthStem);
@@ -345,6 +358,7 @@ namespace BaZiCalculator.Models
                 hiddenElement.Count += 1;
                 hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem);
                 total = chart.MonthStem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++;
+                totalValue = chart.MonthStem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.MonthStemValue : this.TotalYinValue += chart.MonthStemValue;
             }
 
             hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayStem);
@@ -353,6 +367,7 @@ namespace BaZiCalculator.Models
                 hiddenElement.Count += 1;
                 hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem);
                 total = chart.DayStem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++;
+                totalValue = chart.DayStem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.DayStemValue : this.TotalYinValue += chart.DayStemValue;
             }
 
             hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourStem);
@@ -361,23 +376,24 @@ namespace BaZiCalculator.Models
                 hiddenElement.Count += 1;
                 hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem);
                 total = chart.HourStem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++;
+                totalValue = chart.HourStem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.HourStemValue : this.TotalYinValue += chart.HourStemValue;
             }
 
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearHiddenElements.HiddenElement); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearHiddenElements.HiddenElement2); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearHiddenElements.HiddenElement3); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearHiddenElements.HiddenElement); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.YearHiddenElements.HiddenElementValue : this.TotalYinValue += chart.YearHiddenElements.HiddenElementValue; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearHiddenElements.HiddenElement2); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.YearHiddenElements.HiddenElement2Value : this.TotalYinValue += chart.YearHiddenElements.HiddenElement2Value; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.YearHiddenElements.HiddenElement3); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.YearHiddenElements.HiddenElement3Value : this.TotalYinValue += chart.YearHiddenElements.HiddenElement3Value; }
 
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthHiddenElements.HiddenElement); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthHiddenElements.HiddenElement2); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthHiddenElements.HiddenElement3); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthHiddenElements.HiddenElement); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.MonthHiddenElements.HiddenElementValue : this.TotalYinValue += chart.MonthHiddenElements.HiddenElementValue; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthHiddenElements.HiddenElement2); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.MonthHiddenElements.HiddenElement2Value : this.TotalYinValue += chart.MonthHiddenElements.HiddenElement2Value; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.MonthHiddenElements.HiddenElement3); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.MonthHiddenElements.HiddenElement3Value : this.TotalYinValue += chart.MonthHiddenElements.HiddenElement3Value; }
 
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement2); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement3); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.DayHiddenElements.HiddenElementValue : this.TotalYinValue += chart.DayHiddenElements.HiddenElementValue; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement2); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.DayHiddenElements.HiddenElement2Value : this.TotalYinValue += chart.DayHiddenElements.HiddenElement2Value; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement3); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.DayHiddenElements.HiddenElement3Value : this.TotalYinValue += chart.DayHiddenElements.HiddenElement3Value; }
 
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement2); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
-            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement3); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.HourHiddenElements.HiddenElementValue : this.TotalYinValue += chart.HourHiddenElements.HiddenElementValue; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement2); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.HourHiddenElements.HiddenElement2Value : this.TotalYinValue += chart.HourHiddenElements.HiddenElement2Value; }
+            hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement3); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.HourHiddenElements.HiddenElement3Value : this.TotalYinValue += chart.HourHiddenElements.HiddenElement3Value; }
 
         }
 

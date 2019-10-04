@@ -27,6 +27,8 @@ namespace BaZiCalculator.Controllers
                 homeViewModel.ElementTotals = baZiCalculator.ElementTotals;
                 homeViewModel.TotalYin = baZiCalculator.TotalYin;
                 homeViewModel.TotalYang = baZiCalculator.TotalYang;
+                homeViewModel.TotalYinValue = baZiCalculator.TotalYinValue;
+                homeViewModel.TotalYangValue = baZiCalculator.TotalYangValue;
                 homeViewModel.YinYangMeridianResult = baZiCalculator.YinYangMeridianResult;
                 homeViewModel.BirthDate = baZiCalculator.BirthDate;
                 homeViewModel.BirthDay = baZiCalculator.BirthDay;

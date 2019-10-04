@@ -55,6 +55,16 @@ namespace BaZiCalculator.ViewModels
             get;
             set;
         }
+        public int TotalYinValue
+        {
+            get;
+            set;
+        }
+        public int TotalYangValue
+        {
+            get;
+            set;
+        }
         public ElementTotal ElementTotals
         {
             get;

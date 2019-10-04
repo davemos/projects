@@ -55,17 +55,26 @@
     <table class="table table-bordered">
         <tr>
             <th scope="row" colspan="2">Constitutional Meridian Analysis</th>
-            <th scope="row" colspan="1">Numbers</th>
-            <th scope="row" colspan="1">Total Values</th>
+            <th scope="row" colspan="1">Occurrence</th>
+            <th scope="row" colspan="1">Values</th>
         </tr>
         @foreach (var yy in Model.YinYangMeridianResult)
         {
-        <tr>
+            
+            if (yy.StemCount >= 160 || yy.StemCount == 0 || @Model.FourPillarsResult.DayStem == yy.Stem)
+            {
+                @:<tr style="background-color: yellow">
+            }
+            else
+            {
+                @:<tr>
+            }
+
             <th scope="row">@yy.Stem</th>
             <td>@yy.Meridian</td>
             <td>@yy.Count</td>
             <td>@yy.StemCount</td>
-        </tr>
+            @:</tr>
         }
 
     </table>
@@ -74,9 +83,13 @@
             <th scope="row"></th>
             <th width="100" align="right">Total Yin:</th>
             <td width="100" align="left">@Model.TotalYin</td>
-
             <th width="100" align="right">Total Yang:</th>
             <td width="100" align="left">@Model.TotalYang</td>
+            <th width="100" align="right">Value:</th>
+            <th width="100" align="right">Total Yin:</th>
+            <td width="100" align="left">@Model.TotalYinValue</td>
+            <th width="100" align="right">Total Yang:</th>
+            <td width="100" align="left">@Model.TotalYangValue</td>
         </tr>
     </table>
     <br />
