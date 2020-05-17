@@ -102,6 +102,8 @@ namespace BaZiCalculator.Models
 
             //step 4
            
+            
+            
             DateTime monthDay = BirthDate;
             if (BirthDate < cal.MonthNumberChart[1].Month)
             {
@@ -235,8 +237,17 @@ namespace BaZiCalculator.Models
 
         public int Step4(ChineseCalendarChart chart, DateTime monthDay)
         {
-            int monthNum = chart.MonthNumberChart.FindLast((obj) => obj.Month.CompareTo(monthDay) <= 0).Number;
-            return monthNum;
+            int monthNum;
+
+            if (monthDay.Year.CompareTo(chart.MonthNumberChart[1].Month.Year) > 0)
+            {
+                monthNum = chart.MonthNumberChart.Find((obj) => obj.Month.CompareTo(monthDay) <= 0).Number;
+            }
+            else
+            {
+                monthNum = chart.MonthNumberChart.FindLast((obj) => obj.Month.CompareTo(monthDay) <= 0).Number;
+            }
+                return monthNum;
         }
 
         public int Step6(DayBinomialsChart dayChart, IMonthBinomialChart monthChart)

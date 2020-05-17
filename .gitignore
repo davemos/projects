@@ -40,3 +40,5 @@ Thumbs.db
 *.dotCover
 /.vs/BaZiCalculator/v15/Server/sqlite3
 /Target/.vs
+/.vs/BaZiCalculator
+/.vs
