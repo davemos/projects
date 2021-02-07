@@ -14,7 +14,7 @@ namespace BaZiCalculator.ViewModels
             set;
         }
         [Required(ErrorMessage = "Birth Time is required.")]
-        [Range(1,2400)]
+        [Range(0,2400)]
         public long BirthTime
         {
             get;

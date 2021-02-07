@@ -17,12 +17,13 @@
     <tr>
         <td>Birth Date:</td>
         <td>@Html.TextBoxFor(m => m.BirthDate, new { placeholder = "MM/DD/YYYY"})  @Html.ValidationMessageFor(m => m.BirthDate)</td>
-        
+        <td></td>
         
     </tr>
     <tr>
         <td>Birth Time:</td>
-        <td>@Html.TextBoxFor(m => m.BirthTime, new { placeholder = "Military time (1-2400)" }) @Html.ValidationMessageFor(m => m.BirthTime)</td>
+        <td>@Html.TextBoxFor(m => m.BirthTime, new { @Value = 0, placeholder = "Military time (0-2400)" }) @Html.ValidationMessageFor(m => m.BirthTime)</td>
+        <td>Military time (0-2400)</td>
     </tr>
     <tr><td><button type="submit">Calculate</button></td></tr>
 

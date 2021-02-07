@@ -126,21 +126,32 @@
         </tr>
         <tr>
             <th scope="row">STEMS</th>
-            <td>@Model.FourPillarsResult.HourStem @Model.FourPillarsResult.HourStemValue</td>
+            <td>
+                @if (Model.FourPillarsResult.HourBranch != BaZiCalculator.Models.Animals.Empty)
+                {
+                    @Model.FourPillarsResult.HourStem @Model.FourPillarsResult.HourStemValue
+                }
+
+            </td>
             <td>@Model.FourPillarsResult.DayStem @Model.FourPillarsResult.DayStemValue</td>
             <td>@Model.FourPillarsResult.MonthStem @Model.FourPillarsResult.MonthStemValue</td>
             <td>@Model.FourPillarsResult.YearStem @Model.FourPillarsResult.YearStemValue</td>
         </tr>
         <tr>
             <th scope="row">BRANCHES</th>
-            <td>@Model.FourPillarsResult.HourBranch</td>
+            <td>
+                @if (Model.FourPillarsResult.HourBranch != BaZiCalculator.Models.Animals.Empty)
+                {
+                    @Model.FourPillarsResult.HourBranch
+                }
+            </td>
             <td>@Model.FourPillarsResult.DayBranch</td>
             <td>@Model.FourPillarsResult.MonthBranch</td>
             <td>@Model.FourPillarsResult.YearBranch</td>
         </tr>
         <tr>
             <td></td>
-            <td>@if (Model.FourPillarsResult.HourHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
+            <td>@if (Model.FourPillarsResult.HourHiddenElements != null && Model.FourPillarsResult.HourHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
             {<text>@Model.FourPillarsResult.HourHiddenElements.HiddenElement @Model.FourPillarsResult.HourHiddenElements.HiddenElementValue</text>}</td>
             <td>@if (Model.FourPillarsResult.DayHiddenElements.HiddenElement != BaZiCalculator.Models.Stems.Empty)
             {<text>@Model.FourPillarsResult.DayHiddenElements.HiddenElement @Model.FourPillarsResult.DayHiddenElements.HiddenElementValue</text>}</td>
@@ -151,7 +162,7 @@
         </tr>
         <tr>
             <td></td>
-            <td>@if (Model.FourPillarsResult.HourHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
+            <td>@if (Model.FourPillarsResult.HourHiddenElements != null && Model.FourPillarsResult.HourHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
             {<text>@Model.FourPillarsResult.HourHiddenElements.HiddenElement2 @Model.FourPillarsResult.HourHiddenElements.HiddenElement2Value</text>}</td>
             <td>@if (Model.FourPillarsResult.DayHiddenElements.HiddenElement2 != BaZiCalculator.Models.Stems.Empty)
             {<text>@Model.FourPillarsResult.DayHiddenElements.HiddenElement2 @Model.FourPillarsResult.DayHiddenElements.HiddenElement2Value</text>}</td>
@@ -162,7 +173,7 @@
         </tr>
         <tr>
             <td></td>
-            <td>@if (Model.FourPillarsResult.HourHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
+            <td>@if (Model.FourPillarsResult.HourHiddenElements != null && Model.FourPillarsResult.HourHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
             {<text>@Model.FourPillarsResult.HourHiddenElements.HiddenElement3 @Model.FourPillarsResult.HourHiddenElements.HiddenElement3Value</text>}</td>
             <td>@if (Model.FourPillarsResult.DayHiddenElements.HiddenElement3 != BaZiCalculator.Models.Stems.Empty)
             {<text>@Model.FourPillarsResult.DayHiddenElements.HiddenElement3 @Model.FourPillarsResult.DayHiddenElements.HiddenElement3Value</text>}</td>

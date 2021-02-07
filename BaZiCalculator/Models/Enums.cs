@@ -19,6 +19,7 @@ namespace BaZiCalculator.Models
 
     public enum Animals
     {
+        Empty = 0,
         Pig = 1,
         Rat = 2,
         Ox = 3,
