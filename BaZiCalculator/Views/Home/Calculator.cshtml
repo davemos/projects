@@ -94,7 +94,7 @@
             @foreach (var yy in Model.YinYangMeridianResult.OrderByDescending(y => y.StemCount))
             {
 
-                if (yy.StemCount >= 160 || yy.StemCount == 0 || @Model.FourPillarsResult.DayStem == yy.Stem)
+                if ((yy.StemCount >= 160 || @Model.FourPillarsResult.DayStem == yy.Stem) || (!Model.NoBirthTime && yy.StemCount == 0))
                 {
                     @:<tr style="background-color: yellow">
                 }

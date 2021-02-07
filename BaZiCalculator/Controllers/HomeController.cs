@@ -35,6 +35,8 @@ namespace BaZiCalculator.Controllers
                 homeViewModel.BirthMonth = baZiCalculator.BirthMonth;
                 homeViewModel.BirthTime = baZiCalculator.BirthTime;
                 homeViewModel.BirthYear = baZiCalculator.BirthYear;
+                homeViewModel.NoBirthTime = model.NoBirthTime;
+
                 string excess = ""; string deficient = "";
                 if (homeViewModel.ElementTotals.WoodPercent > 25) excess += "Wood";
                 if (homeViewModel.ElementTotals.FirePercent > 25) excess += (excess != "" ? " and Fire" : " Fire");
