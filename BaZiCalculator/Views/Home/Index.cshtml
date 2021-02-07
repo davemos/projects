@@ -22,11 +22,33 @@
     </tr>
     <tr>
         <td>Birth Time:</td>
-        <td>@Html.TextBoxFor(m => m.BirthTime, new { @Value = 0, placeholder = "Military time (0-2400)" }) @Html.ValidationMessageFor(m => m.BirthTime)</td>
-        <td>Military time (0-2400)</td>
+        <td>@Html.TextBoxFor(m => m.BirthTime, new { placeholder = "Military time (0-2359)", id = "birthTime" }) @Html.ValidationMessageFor(m => m.BirthTime)</td>
+        <td>
+            <label>@Html.CheckBoxFor(x => x.NoBirthTime)&nbsp;@Html.DisplayNameFor(x => x.NoBirthTime)</label>
+        </td>
     </tr>
     <tr><td><button type="submit">Calculate</button></td></tr>
 
 </table>
 }
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#NoBirthTime').click(
 
+            function (e) {
+                // code here to hide your text
+
+                //var checked = $(this).attr('checked');
+                if (this.checked) {
+                    $('#birthTime').val('0');
+                    $('.field-validation-error').prop('hidden', 'true');
+                }
+
+                else {
+                    $('#birthTime').val('');
+                }
+            }
+        )
+    }
+    );
+</script>

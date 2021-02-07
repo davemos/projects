@@ -15,6 +15,7 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
+        public bool NoBirthTime { get; set; }
         public int BirthYear
         {
             get;
@@ -65,11 +66,12 @@ namespace BaZiCalculator.Models
             get;
             set;
         }
-        public BaZiCalculator(DateTime birthDate, long birthTime)
+        public BaZiCalculator(DateTime birthDate, long birthTime, bool noBirthTime)
         {
             FourPillarsResult = new FourPillarsTable();
             BirthDate = birthDate;
             BirthTime = birthTime;
+            NoBirthTime = noBirthTime;
             BirthYear = BirthDate.Year;
             BirthMonth = BirthDate.Month;
             BirthDay = BirthDate.Day;
@@ -134,7 +136,7 @@ namespace BaZiCalculator.Models
             //step 8
             HourStemAndBranchChart hsbc = Step8(hourStemAndBranchChart, FourPillarsResult.DayStem);
             HourStem hs = new HourStem();
-            if (BirthTime != 0)
+            if (!NoBirthTime)
             {
                 if (BirthTime < 2300 && BirthTime >= 100)
                 {
@@ -190,7 +192,7 @@ namespace BaZiCalculator.Models
             FourPillarsResult.DayHiddenElements.HiddenElement3 = hiddenElements.HiddenElement2;
             FourPillarsResult.DayHiddenElements.HiddenElement3Value = hiddenElements.HiddenElement2Value;
 
-            if (BirthTime != 0)
+            if (!NoBirthTime)
             {
                 hiddenElements = hiddenElementsChart.Find((obj) => obj.Animal == FourPillarsResult.HourBranch);
                 FourPillarsResult.HourHiddenElements = new HiddenElementsChart();
@@ -309,7 +311,7 @@ namespace BaZiCalculator.Models
             if (chart.DayHiddenElements.HiddenElement == stem) total += chart.DayHiddenElements.HiddenElementValue;
             if (chart.DayHiddenElements.HiddenElement2 == stem) total += chart.DayHiddenElements.HiddenElement2Value;
             if (chart.DayHiddenElements.HiddenElement3 == stem) total += chart.DayHiddenElements.HiddenElement3Value;
-            if (BirthTime != 0)
+            if (!NoBirthTime)
             {
                 if (chart.HourHiddenElements.HiddenElement == stem) total += chart.HourHiddenElements.HiddenElementValue;
                 if (chart.HourHiddenElements.HiddenElement2 == stem) total += chart.HourHiddenElements.HiddenElement2Value;
@@ -413,7 +415,7 @@ namespace BaZiCalculator.Models
             hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement2); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.DayHiddenElements.HiddenElement2Value : this.TotalYinValue += chart.DayHiddenElements.HiddenElement2Value; }
             hiddenElement = yyChart.Find((obj) => obj.Stem == chart.DayHiddenElements.HiddenElement3); if (hiddenElement != null) {hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.DayHiddenElements.HiddenElement3Value : this.TotalYinValue += chart.DayHiddenElements.HiddenElement3Value; }
 
-            if (BirthTime != 0)
+            if (!NoBirthTime)
             {
                 hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.HourHiddenElements.HiddenElementValue : this.TotalYinValue += chart.HourHiddenElements.HiddenElementValue; }
                 hiddenElement = yyChart.Find((obj) => obj.Stem == chart.HourHiddenElements.HiddenElement2); if (hiddenElement != null) { hiddenElement.Count += 1; hiddenElement.StemCount = Step11(FourPillarsResult, hiddenElement.Stem); total = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYang++ : this.TotalYin++; totalValue = hiddenElement.Stem.ToString().StartsWith("Yang") ? this.TotalYangValue += chart.HourHiddenElements.HiddenElement2Value : this.TotalYinValue += chart.HourHiddenElements.HiddenElement2Value; }

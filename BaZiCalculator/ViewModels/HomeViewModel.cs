@@ -20,6 +20,7 @@ namespace BaZiCalculator.ViewModels
             get;
             set;
         }
+        public bool NoBirthTime { get; set; }
         public int BirthYear
         {
             get;

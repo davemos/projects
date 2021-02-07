@@ -21,7 +21,7 @@ namespace BaZiCalculator.Controllers
             HomeViewModel homeViewModel = new HomeViewModel();
             if (ModelState.IsValid)
             {
-                BaZiCalculator.Models.BaZiCalculator baZiCalculator = new Models.BaZiCalculator(Convert.ToDateTime(model.BirthDate), model.BirthTime);
+                BaZiCalculator.Models.BaZiCalculator baZiCalculator = new Models.BaZiCalculator(Convert.ToDateTime(model.BirthDate), model.BirthTime, model.NoBirthTime);
 
                 homeViewModel.FourPillarsResult = baZiCalculator.FourPillarsResult;
                 homeViewModel.ElementTotals = baZiCalculator.ElementTotals;
