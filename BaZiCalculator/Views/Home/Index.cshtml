@@ -24,7 +24,7 @@
         <td>Birth Time:</td>
         <td>@Html.TextBoxFor(m => m.BirthTime, new { placeholder = "Military time (0-2359)", id = "birthTime" }) @Html.ValidationMessageFor(m => m.BirthTime)</td>
         <td>
-            <label>@Html.CheckBoxFor(x => x.NoBirthTime)&nbsp;@Html.DisplayNameFor(x => x.NoBirthTime)</label>
+            <label>@Html.CheckBoxFor(x => x.NoBirthTime)&nbsp;@Html.DisplayName("Birth Time Unknown")</label>
         </td>
     </tr>
     <tr><td><button type="submit">Calculate</button></td></tr>
