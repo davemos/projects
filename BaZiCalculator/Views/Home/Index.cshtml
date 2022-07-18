@@ -16,39 +16,99 @@
 
     <tr>
         <td>Birth Date:</td>
-        <td>@Html.TextBoxFor(m => m.BirthDate, new { placeholder = "MM/DD/YYYY"})  @Html.ValidationMessageFor(m => m.BirthDate)</td>
+        <td>@Html.TextBoxFor(m => m.BirthDate, new { placeholder = "MM/DD/YYYY" })  @Html.ValidationMessageFor(m => m.BirthDate)</td>
         <td></td>
-        
+
     </tr>
     <tr>
         <td>Birth Time:</td>
         <td>@Html.TextBoxFor(m => m.BirthTime, new { placeholder = "Military time (0-2359)", id = "birthTime" }) @Html.ValidationMessageFor(m => m.BirthTime)</td>
-        <td>
-            <label>@Html.CheckBoxFor(x => x.NoBirthTime)&nbsp;@Html.DisplayName("Birth Time Unknown")</label>
+        <td><table>
+            <tr><td><label>@Html.CheckBoxFor(x => x.NoBirthTime)&nbsp;@Html.DisplayName("Birth Time Unknown")</label></td></tr>
+            </table>     
         </td>
     </tr>
-    <tr><td><button type="submit">Calculate</button></td></tr>
-
+   
+    <tr><td align="right"><button type="submit">Calculate</button></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" name="btnLink" id="btnLink">Getting the Time Right</button>
+        </td>
+        <td><a href="http://www.sunrisesunset.com/" target="_blank">More info...</a></td>
+    </tr>
 </table>
-}
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#NoBirthTime').click(
 
-            function (e) {
-                // code here to hide your text
+    <div class="modal fade" id="ModalPopUp" role="dialog">
+        <div class="modal-dialog modal-lg err-pop">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button id="DivClose" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="text-align:left;">
+                    <p>
+                        Getting Time Right<br />
+                        <label>Getting the time right is important for accurate results. There are two issues that alter the time: solar noon and daylight saving time (DST).</label>
+                    </p>
 
-                //var checked = $(this).attr('checked');
-                if (this.checked) {
-                    $('#birthTime').val('0');
-                    $('.field-validation-error').prop('hidden', 'true');
-                }
+                    <p>
+                        Solar Noon
+                        Solar noon is when the sun is at its highest point in the sky when it passes over a specific place (longitude). Where you are positioned within a time zone alters what time your solar noon is. It may be before or after noon according to the clock. Adjustments need to be made to the birth time to reflect the correct or “natural” time.
+                        To find solar noon for the birth date and time at hand, go to www.sunrisesunset.com
+                    </p>
 
-                else {
-                    $('#birthTime').val('');
-                }
-            }
-        )
+                    <p>
+                        <ul>
+                            <li>Fill in the location (Country, State, City)</li>
+                            <li>Fill in the month and year</li>
+                            <li>Check the box for solar noon</li>
+                            <li>Click the “Make Calendar” button</li>
+                            <li>Find the birth date on the calendar</li>
+                            <li>Find solar noon on the birth date of the calendar. This is solar noon.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        If solar noon is greater than (&gt) 12:00, subtract the number of minutes/hours it is greater than noon from the birth time.<br />
+                        If solar noon is less than (&lt) 12:00, add the number of minutes/hours it is less than from the birth time. This is the adjusted birth time accounting for solar noon.
+                    </p>
+
+                    <p>
+                        Daylight Saving Time (DST)
+                        Dates between March and November need to be checked for DST in the Northern Hemisphere, and September through April in the Southern Hemisphere. The occurrence of DLS is provided on the solar noon calendar either on the start or end date, or at the bottom right of the calendar if DST is for the whole month. Daylight Saving Time (DST) has inconsistencies across the world and from year to year. If you are working with a birth date before 1967 or outside the United States, you may have to do a bit more research to find out if DST was in effect.
+                    </p>
+
+                    <p>If DST is in effect for the birthdate you are working with, simply subtract an hour from the birth time. This will be in addition to adding or subtracting the time for solar noon.</p>
+
+                    <p>*Keep in mind, if the birth time is close to 12:00 a.m. the birth date may be shifted to the next or previous day when adjusting for solar noon and/or DST.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     }
-    );
-</script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#NoBirthTime').click(
+
+                function (e) {
+                    // code here to hide your text
+
+                    //var checked = $(this).attr('checked');
+                    if (this.checked) {
+                        $('#birthTime').val('0');
+                        $('.field-validation-error').prop('hidden', 'true');
+                    }
+
+                    else {
+                        $('#birthTime').val('');
+                    }
+                }
+            )
+
+            $("#btnLink").click(function () {
+                $('#ModalPopUp').modal('show');
+            })
+        }
+        );
+    </script>

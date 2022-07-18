@@ -38,16 +38,16 @@ namespace BaZiCalculator.Controllers
                 homeViewModel.NoBirthTime = model.NoBirthTime;
 
                 string excess = ""; string deficient = "";
-                if (homeViewModel.ElementTotals.WoodPercent > 25) excess += "Wood";
-                if (homeViewModel.ElementTotals.FirePercent > 25) excess += (excess != "" ? " and Fire" : " Fire");
-                if (homeViewModel.ElementTotals.EarthPercent > 25) excess += (excess != "" ? " and Earth" : " Earth");
-                if (homeViewModel.ElementTotals.MetalPercent > 25) excess += (excess != "" ? " and Metal" : " Metal");
-                if (homeViewModel.ElementTotals.WaterPercent > 25) excess += (excess != "" ? " and Water" : " Water");
-                if (homeViewModel.ElementTotals.WoodPercent < 15) deficient += "Wood";
-                if (homeViewModel.ElementTotals.FirePercent < 15) deficient += (deficient != "" ? " and Fire" : " Fire");
-                if (homeViewModel.ElementTotals.EarthPercent < 15) deficient += (deficient != "" ? " and Earth" : " Earth");
-                if (homeViewModel.ElementTotals.MetalPercent < 15) deficient += (deficient != "" ? " and Metal" : " Metal");
-                if (homeViewModel.ElementTotals.WaterPercent < 15) deficient += (deficient != "" ? " and Water" : " Water");
+                if (homeViewModel.ElementTotals.WoodPercent > 30) excess += "Wood";
+                if (homeViewModel.ElementTotals.FirePercent > 30) excess += (excess != "" ? " and Fire" : " Fire");
+                if (homeViewModel.ElementTotals.EarthPercent > 30) excess += (excess != "" ? " and Earth" : " Earth");
+                if (homeViewModel.ElementTotals.MetalPercent > 30) excess += (excess != "" ? " and Metal" : " Metal");
+                if (homeViewModel.ElementTotals.WaterPercent > 30) excess += (excess != "" ? " and Water" : " Water");
+                if (homeViewModel.ElementTotals.WoodPercent < 10) deficient += "Wood";
+                if (homeViewModel.ElementTotals.FirePercent < 10) deficient += (deficient != "" ? " and Fire" : " Fire");
+                if (homeViewModel.ElementTotals.EarthPercent < 10) deficient += (deficient != "" ? " and Earth" : " Earth");
+                if (homeViewModel.ElementTotals.MetalPercent < 10) deficient += (deficient != "" ? " and Metal" : " Metal");
+                if (homeViewModel.ElementTotals.WaterPercent < 10) deficient += (deficient != "" ? " and Water" : " Water");
                 homeViewModel.StatementOfExcessDeficient = "This Profile is ";
                 if (excess == "" && deficient == "") homeViewModel.StatementOfExcessDeficient += "Balanced.";
                 if (excess != "")
